@@ -13,29 +13,21 @@ Line = nextBoolean(); = reads whether its true or false
 Line = hasNextFloat(); = confirms whether the next value is float or not
 Line = hasnextInt(); = confirms whether the next value is int or not
 */
-
 import java.util.Scanner;
-
-/*public class Reading{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        int sum = a + b;
-        System.out.println(sum);
-            }
-}*/
 
 public class Reading{
     public static void main(String[] args){
-
         Scanner sc = new Scanner(System.in);
-        String name1 = sc.nextLine();
-        String name2 = sc.nextLine();
+        //float b = sc.nextFloat();
+        //String a = sc.next(); == one word
+        //String a = sc.nextLine(); == whole sentence
 
-        String conc = name1 + " " + name2;
+        int x,y;
+        System.out.println("Enter 2 numbers");
+        x=sc.nextInt();
+        y=sc.nextInt();
 
-        System.out.println(conc + " ");
-    }
+        int sum = x + y;
+        System.out.println("The combination of numbers" + " " + sum);
+            }
 }
