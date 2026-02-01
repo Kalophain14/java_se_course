@@ -34,8 +34,8 @@ public class Scanning {
         String name1 = sc.nextLine();
         String name2 = sc.nextLine();
 
-        String conc = name1 + " " + name2;
+        //String conc = name1 + " " + name2;
 
-        System.out.println(conc + " ");
+        System.out.println(name1 + " " + name2 + " ");
     }
 }
