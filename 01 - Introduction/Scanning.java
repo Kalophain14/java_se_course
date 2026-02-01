@@ -36,6 +36,6 @@ public class Scanning {
 
         //String conc = name1 + " " + name2;
 
-        System.out.println(name1 + " " + name2 + " ");
+        System.out.println(name1 +  " " + name2 + " ");
     }
 }
