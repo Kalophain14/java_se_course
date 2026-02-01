@@ -22,12 +22,15 @@ public class Reading{
         //String a = sc.next(); == one word
         //String a = sc.nextLine(); == whole sentence
 
-        int x,y;
-        System.out.println("Enter 2 numbers");
-        x=sc.nextInt();
-        y=sc.nextInt();
+        //int x,y;
+        //System.out.println("Enter 2 numbers");
+        //x=sc.nextInt();
+        //y=sc.nextInt();
 
-        int sum = x + y;
-        System.out.println("The combination of numbers" + " " + sum);
+        sc.useRadix(2);
+       int x=sc.nextInt();
+
+        //int sum = x + y;
+        System.out.println("The binary is" + " " + x);
             }
 }
