@@ -31,11 +31,14 @@ public class Scanning {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter: Name & Surname");
+
         String name1 = sc.nextLine();
         String name2 = sc.nextLine();
 
-        //String conc = name1 + " " + name2;
+        String conc = name1 + " " + name2;
 
-        System.out.println(name1 +  " " + name2 + " ");
+        //System.out.println("My name is " + name1 + " " +name2);
+        System.out.println(conc);
     }
 }
