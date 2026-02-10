@@ -1,13 +1,15 @@
 /*
 Bitwise operators = they can only perfomed on integer values (doesnt work on float and double)
 
-AND & = Both values has to be true otherwise false
-OR | = if any value is true then it is true
-NOT ~ =
-XOR (exclusive or) ^ = if any of the two values are different it is true
-RIGHT SHIFT >>
-UNSIGNED RIGHT SHIFT >>>
-LEFT SHIFT <<
+Works only on byte, short, int & long
+
+AND & = Sets each bit to 1 if both corresponding bits are 1.
+OR | = Sets each bit to 1 if at least one corresponding bit is 1.
+INVERTS ~ = Inverts all bits.
+XOR (exclusive or) ^ = Sets each bit to 1 if only one of the corresponding bits is 1.
+RIGHT SHIFT >> Shifts bits right, preserving the sign bit.
+LEFT SHIFT << Shifts bits left, filling new positions with zeros.
+UNSIGNED RIGHT SHIFT >>> Shifts bits right, filling new positions with zeros.
 
 int x = 10, y = 6, 3;
 
