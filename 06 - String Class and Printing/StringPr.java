@@ -36,8 +36,12 @@ public class StringPr {
 
         //*charAt
         //String str2 = str.charAt("a");
-        //String str3 = str.indexOf("ab") / ("a, 6 "); searches for the index 0 1 2 3 4
+        //String str3 = str.indexOf("ab") / ("a, 6 ");
         //System.out.println(str2);
+
+        //*startsWith*
+        String str1 = "www.udemy.co.in";
+        System.out.println(str1.lastIndexOf("."));
 
 
     }
