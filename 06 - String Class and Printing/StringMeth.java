@@ -14,7 +14,7 @@ valueOf(int i) >
 startsWith(String s) > True / false whether a string starts with something
 endsWith(String s) > True / false whether a string ends with something
 equals(String s) > whether a string is equal to another string
-equalsIgnoreCase(String s) > whether is equal to another string by ignore the Case sensetive
+equalsIgnoreCase(String s) > whether is equal to another string by ignore the Case sensitive
 
 *Character Methods*
 charAt(int index) > searches where a char is at in the index
@@ -23,5 +23,11 @@ charAt(int index) > searches where a char is at in the index
 length() > prints out the length of string
 indexOf(String s/char) > searches for the string/char and returns its index
 lastIndexOf(String s) > searches for the last index right to left direction
-compareTo(Strings s) >
+compareTo(Strings s) > compare strings in dictionary order abcdefegc (it checks which comes first)
+-1 > if the first string is smaller
+0 > if both strings are equal
+1 > if the first string is larger
+also uses ASCII codes to compare
+
+
  */
