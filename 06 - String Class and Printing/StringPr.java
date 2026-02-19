@@ -65,9 +65,9 @@ public class StringPr {
         String str7 = " Java is awesome";
         System.out.println(str6.concat(str7));
 
+        //*valueOf
+        String str8 = "Java";
+        System.out.println(str8.matches(str7));
+
     }
 }
-
-//Part 2
-
-//Part 3
