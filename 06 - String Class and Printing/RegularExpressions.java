@@ -32,7 +32,7 @@ XZ > exactly XZ
 
  */
 
-public class RegularExpressions{
+/*public class RegularExpressions{
     public static void main(String[] args) {
         String str2 = " ";
         System.out.println(str2.matches("\\s"));
@@ -46,10 +46,22 @@ Quantifiers = specifying how many symbols you want
 [abc]* string can be abcbbbc its true
 [a-z]* everything must be in lower alphabet from a - z e.g apple, banana etc
 
-+ > one or more time (
++ > one or more time (1 character has to be there to be true)
+
 ? > 0 or 1 time
-{X} > X times
-{X,Y} > Between X and Y time
+
+{X} > X times (this means the length of the string must be exactly of the size
+- [a -z] {5} - this means you can write any string but it must be 5 letters not more!
+ashdf babye ysyse
+
+{X,Y} > Between X and Y time (minimum and maximum) - user id for example must 8 char
 
 */
+
+public class RegularExpressions{
+    public static void main(String[] args) {
+        String str2 = "john45@gmail.com";
+        System.out.println(str2.matches("\\w*gmail.com*."));
+    }
+}
 
