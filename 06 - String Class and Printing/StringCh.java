@@ -12,19 +12,22 @@ public class StringCh {
         System.out.println("Username: " + username);
         System.out.println("Domain: " + domain);
 
-        //RegularExpressions challange
+        /*Meta challenge*/
         //Binary
         int b = 100010;
         String str2 = String.valueOf(b); //convert int to string
         System.out.println(str2.matches("[01]+"));
 
-        //Hex or decicmal
+        //Hex or decimal
         String str3 = "424AD";
         System.out.println(str3.matches("[0-9A-F]+"));
 
-        //Datesformat dd/mm/yyyy
+        //Dates format dd/mm/yyyy
         String str4 = "20/02/2026";
         System.out.println(str4.matches("\\d{2}/\\d{2}/\\d{4}")); //Match exactly 2 digits,then 2 digits,then 4 digits
+
+
+
 
 
     }
