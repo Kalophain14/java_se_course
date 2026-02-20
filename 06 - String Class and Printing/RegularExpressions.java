@@ -39,4 +39,17 @@ public class RegularExpressions{
     }
 }
 
+/*
+Quantifiers = specifying how many symbols you want
+
+* > 0 or more time (it gives any symbol is true if the string contains certain characters)
+[abc]* string can be abcbbbc its true
+[a-z]* everything must be in lower alphabet from a - z e.g apple, banana etc
+
++ > one or more time (
+? > 0 or 1 time
+{X} > X times
+{X,Y} > Between X and Y time
+
+*/
 
