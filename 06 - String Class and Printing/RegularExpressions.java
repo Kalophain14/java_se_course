@@ -54,7 +54,7 @@ Quantifiers = specifying how many symbols you want
 - [a -z] {5} - this means you can write any string but it must be 5 letters not more!
 ashdf babye ysyse
 
-{X,Y} > Between X and Y time (minimum and maximum) - user id for example must 8 char
+{X,Y} > Between X(starting from) and Y(range to) time (minimum and maximum) - user id for example must 8 char
 
 */
 
