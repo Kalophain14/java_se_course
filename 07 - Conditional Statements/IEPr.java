@@ -29,20 +29,28 @@ public class IEPr {
         }
 
         // Find person is young or not young
-        int age = 18;
+        int age;
 
-        if (age >= 30){
+        Scanner input2 = new Scanner(System.in);
+        System.out.println("Enter your age");
+        age = input2.nextInt();
+
+        if (age >= 14 && age <= 55){
             System.out.println("Not young");
         } else if (age < 30){
             System.out.println("Young");
         }
 
         //grades for given marks
-        int marks = 100;
+        int marks;
+
+        Scanner input3 = new Scanner(System.in);
+        System.out.println("Enter your marks");
+        marks = input3.nextInt();
 
         if (marks >= 50){
             System.out.println("Excellent");
-        } else if (marks < 60){
+        } else if (marks >= 50){
             System.out.println("Good");
         } else  {
             System.out.println("Failed");
