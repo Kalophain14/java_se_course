@@ -44,22 +44,5 @@
 public class ArmstrongNumber {
 
     public static void main(String[] args) {
-
-        int[] testValues = {153, 370, 371, 407, 9474, 123, 100};
-
-        for (int n : testValues) {
-            System.out.println(n + " → " + (isArmstrong(n) ? "Armstrong ✓" : "Not Armstrong ✗"));
-        }
-    }
-
-    static boolean isArmstrong(int n) {
-        int temp = n, sum = 0;
-        int len = String.valueOf(n).length();
-        while (temp != 0) {
-            int digit = temp % 10;
-            sum += (int) Math.pow(digit, len);
-            temp /= 10;
-        }
-        return sum == n;
     }
 }

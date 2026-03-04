@@ -41,35 +41,5 @@
 public class Palindrome {
 
     public static void main(String[] args) {
-
-        int[] testNums = {121, 1331, 12321, 123, 10};
-        System.out.println("=== Number Palindrome Check ===");
-        for (int n : testNums) {
-            System.out.println(n + " → " + (isNumberPalindrome(n) ? "Palindrome ✓" : "Not Palindrome ✗"));
-        }
-
-        String[] testStrings = {"racecar", "madam", "hello", "level", "java"};
-        System.out.println("\n=== String Palindrome Check ===");
-        for (String s : testStrings) {
-            System.out.println("\"" + s + "\" → " + (isStringPalindrome(s) ? "Palindrome ✓" : "Not Palindrome ✗"));
-        }
-    }
-
-    static boolean isNumberPalindrome(int n) {
-        int original = n, rev = 0;
-        while (n != 0) {
-            rev = rev * 10 + (n % 10);
-            n /= 10;
-        }
-        return rev == original;
-    }
-
-    static boolean isStringPalindrome(String s) {
-        int left = 0, right = s.length() - 1;
-        while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) return false;
-            left++; right--;
-        }
-        return true;
     }
 }
