@@ -33,10 +33,13 @@ public class PractisingForLoop {
         for (int t = 1; t <= 10; t++) {
             System.out.println(tableNumber + " x " + t + " = " + (tableNumber * t));
         }
+        //System.out.println();
+
         //sumOfAll
-        int evenSum = 0;
+        System.out.println("Enter a number");
+
         Scanner as = new Scanner(System.in);
-        System.out.println();
+        int evenSum = as.nextInt();
 
         for (int e = 1; e <= 50; e++){
             if (e % 2 == 0) {
