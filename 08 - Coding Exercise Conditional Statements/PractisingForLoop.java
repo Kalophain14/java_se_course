@@ -23,12 +23,13 @@ public class PractisingForLoop {
 
         // print multiplication
         //int tableNumber = 7;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number");
+        int tableNumber = sc.nextInt();
+
         for (int t = 1; t <= 10; t++) {
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Enter a number");
-            int tableNumber = sc.nextInt();
-
             System.out.println(tableNumber + " x " + t + " = " + (tableNumber * t));
         }
         //sumOfAll
