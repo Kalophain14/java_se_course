@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * ============================================================
  *  PRACTICE: Practising For Loop
@@ -20,8 +22,13 @@ public class PractisingForLoop {
         }
 
         // print multiplication
-        int tableNumber = 7;
+        //int tableNumber = 7;
         for (int t = 1; t <= 10; t++) {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Enter a number");
+            int tableNumber = sc.nextInt();
+
             System.out.println(tableNumber + " x " + t + " = " + (tableNumber * t));
         }
         //sumOfAll
@@ -32,5 +39,11 @@ public class PractisingForLoop {
             }
         }
         System.out.println("sum of all that number is " + evenSum);
+
+        //Fibonacci Series
+
+
+
+
     }
 }
