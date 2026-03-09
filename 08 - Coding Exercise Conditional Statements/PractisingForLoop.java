@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -34,6 +35,9 @@ public class PractisingForLoop {
         }
         //sumOfAll
         int evenSum = 0;
+        Scanner as = new Scanner(System.in);
+        System.out.println();
+
         for (int e = 1; e <= 50; e++){
             if (e % 2 == 0) {
                 evenSum += e;
