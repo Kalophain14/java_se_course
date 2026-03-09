@@ -48,7 +48,38 @@ public class PractisingForLoop {
         }
         System.out.println("sum of all that number is " + evenSum);
 
-        //Fibonacci Series
+        /* Armstrong Numbers*/
+
+        // TASK Display Digits Of a No
+
+        // We have a number N = 257
+        // we find a reminder by using mod %,
+        // 257 % 10 = 7
+        // 257/10 = 25
+        // 25 % 10 = 5
+        // 25/10 = 2
+        // 2/10 = 0
+
+        int diS = 257;
+
+        /* for(; diS > 0; diS = diS / 10 ){
+            int rem = diS % 10;
+            System.out.println(rem);
+        } */
+
+        System.out.println("Enter a number");
+        diS = sc.nextInt();
+
+        while( diS > 0){
+            int mod = diS % 10;
+            diS = diS / 10;
+
+            System.out.println(mod);
+        }
+
+        //Count digits of a number
+
+
 
 
 
