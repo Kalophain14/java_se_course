@@ -60,19 +60,19 @@ public class PractisingForLoop {
         // 25/10 = 2
         // 2/10 = 0
 
-        int diS = 257;
+        int dis = 257;
 
-        /* for(; diS > 0; diS = diS / 10 ){
-            int rem = diS % 10;
+        /* for(; dis > 0; dis = dis / 10 ){
+            int rem = dis % 10;
             System.out.println(rem);
         } */
 
         System.out.println("Enter a number");
-        diS = sc.nextInt();
+        dis = sc.nextInt();
 
-        while( diS > 0){
-            int mod = diS % 10;
-            diS = diS / 10;
+        while( dis > 0){
+            int mod = dis % 10;
+            dis = dis / 10;
 
             System.out.println(mod);
         }
