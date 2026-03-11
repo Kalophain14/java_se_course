@@ -48,7 +48,7 @@ public class PractisingForLoop {
         }
         System.out.println("sum of all that number is " + evenSum);
 
-        /* Armstrong Numbers*/
+        /* Armstrong Numbers Using While Loop*/
 
         // TASK Display Digits Of a No
 
@@ -70,18 +70,45 @@ public class PractisingForLoop {
         System.out.println("Enter a number");
         dis = sc.nextInt();
 
+        int mod;
+
         while( dis > 0){
-            int mod = dis % 10;
+            mod = dis % 10;
             dis = dis / 10;
 
             System.out.println(mod);
         }
 
         //Count digits of a number
+        int count = 0;
+        int numC;
 
+        System.out.println("Enter your counter");
+        numC = sc.nextInt();
 
+        while(numC > 0){
+            numC = numC / 10;
+            count++;
+        }
+        System.out.println(count);
 
+        // Finding a num is Armstrong or not
+        System.out.println("Enter your armstrong number: ");
+        int armstrong = sc.nextInt();
 
+        int arm = armstrong;   // preserve original number for comparison
+        int sumOf = 0;
 
+        while (arm > 0) {
+            int digit = arm % 10;
+            sumOf = sumOf + digit * digit * digit;
+            arm = arm / 10;
+        }
+
+        if (sumOf == armstrong) {
+            System.out.println(armstrong + " is an Armstrong number ✅");
+        } else {
+            System.out.println(armstrong + " is NOT an Armstrong number ❌");
+        }
     }
 }
