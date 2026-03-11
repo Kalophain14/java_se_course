@@ -99,9 +99,10 @@ public class PractisingForLoop {
 
         int arm = armstrong;   // preserve original number for comparison
         int sumOf = 0;
+        int digit;
 
         while (arm > 0) {
-            int digit = arm % 10;
+            digit = arm % 10;
             sumOf = sumOf + digit * digit * digit;
             arm = arm / 10;
         }
