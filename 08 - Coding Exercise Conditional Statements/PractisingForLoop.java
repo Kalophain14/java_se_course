@@ -93,6 +93,7 @@ public class PractisingForLoop {
         System.out.println(count);
 
         // Finding a num is Armstrong or not
+        //input
         System.out.println("Enter your armstrong number: ");
         int armstrong = sc.nextInt();
 
