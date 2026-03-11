@@ -112,5 +112,20 @@ public class PractisingForLoop {
         } else {
             System.out.println(armstrong + " is NOT an Armstrong number ❌");
         }
+
+        // Reverse the number
+        System.out.println("Enter the reversal number");
+        int reversal = sc.nextInt();
+
+        int n = reversal;
+        int rev = 0;
+        int nums;
+
+        while (n > 0) {
+            nums = n % 10;
+            rev = (rev * 10) + nums;
+            n = n / 10;
+        }
+        System.out.println(rev);
     }
 }
