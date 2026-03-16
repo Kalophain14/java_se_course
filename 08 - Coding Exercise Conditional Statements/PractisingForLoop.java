@@ -127,5 +127,33 @@ public class PractisingForLoop {
             n = n / 10;
         }
         System.out.println(rev);
+
+        //Check Palindrome
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a palindrome number or word: ");
+        String word = scanner.nextLine().toLowerCase(); // convert to lowercase so "Racecar" and "racecar" are treated the same
+
+        int left = 0;
+        int right = word.length() - 1; // point to the last character index (e.g. "hello" → index 4)
+        boolean isPalindrome = true;   // assume it's a palindrome until proven otherwise
+
+// compare characters from both ends moving toward the middle
+        while (left < right) {
+            if (word.charAt(left) != word.charAt(right)) { // charAt() gets the character at a given index
+                isPalindrome = false; // mismatch found, not a palindrome
+                break;                // no need to check further
+            }
+            left++;  // move left pointer forward  →
+            right--; // move right pointer backward ←
+        }
+
+        if (isPalindrome) {
+            System.out.println("✅ \"" + word + "\" is a Palindrome!");
+        } else {
+            System.out.println("❌ \"" + word + "\" is NOT a Palindrome.");
+        }
+
+        scanner.close(); // always close the scanner to free up resources
     }
 }
