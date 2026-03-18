@@ -80,7 +80,32 @@ When an object has been found, the requested method is called (toString in this 
         int octal = 07_7_7_7_7_7_7_7_0; // 0 prefix --> octal literal
         long hexBytes = 0xFF_EC_DE_5E; // 0x prefix --> hexadecimal literal
         int age = 100; // no prefix --> decimal literal
-         */
 
+        //Boolean literals
+
+        boolean flag = true; //true literal
+        flag = false; //false literal
+
+        //String Literals
+
+        An opening double-quote (") character.
+        Zero or more other characters that are neither a double-quote or a line-break character. (A backslash (\)
+        character alters the meaning of subsequent characters; see Escape sequences in literals.)
+        A closing double-quote character.
+
+        // Long strings
+        String typingPractice = "The quick ways to study + is through being + consist "
+
+        // The Null Literal
+        null represents the one and only value of the null type
+
+        MyClass object = null;
+        MyClass[] objects = new MyClass[]{new MyClass(), null, new MyClass()};
+        myMethod(null);
+        if (objects != null) {
+            // Do something
+        }
+
+        */
     }
 }

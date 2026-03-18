@@ -141,7 +141,7 @@ public class PractisingForLoop {
         while (left < right) {
             if (word.charAt(left) != word.charAt(right)) { // charAt() gets the character at a given index
                 isPalindrome = false; // mismatch found, not a palindrome
-                break;                // no need to check further
+                break;                // stops checking further
             }
             left++;  // move left pointer forward  →
             right--; // move right pointer backward ←
