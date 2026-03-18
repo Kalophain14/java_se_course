@@ -32,8 +32,25 @@
  *    └─────────┘
  * ============================================================
  */
+import java.util.*;
 public class FibonacciSeries {
 
     public static void main(String[] args) {
+
+        //AP Series Challange
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Program to print AP Series");
+        System.out.println("Enter a, d and n");
+        int a = sc.nextInt();
+        int d = sc.nextInt();
+        int n = sc.nextInt();
+
+        int term = a;
+
+        for (int i = 0; i<n; i++){
+            System.out.print(term + ",");
+            term = term + d; //get the next term and print next term until i == n
+        }
     }
 }
