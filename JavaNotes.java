@@ -1,4 +1,4 @@
-publc class JavaNotes {
+public class JavaNotes {
     public static void main(String[] args) {
 
 /* Chapter 3: Getters and setters
@@ -11,7 +11,7 @@ Methods
 getVariableName() //gets the variable and return the value of the variable
 setVariableName() //sets the value of variable
 */
-        public class Person {
+        class Person {
             private String name;
 
             public String getName() {//can only be accessed using this method
@@ -39,16 +39,16 @@ When an object has been found, the requested method is called (toString in this 
 
 
         Object obj = new Object(); //referencing
-        String text = obj.toString() //obj dereferenced
+        String text = obj.toString(); //obj dereferenced
 
         // When a reference has the value null, dereferencing results in a NullPointerException:
 
-        Object obj = null; // indicates there is no value or no memory
-        obj.toString(); //Throws a NullpointerException when this statement is executed.
+        Object obj1 = null; // indicates there is no value or no memory
+        obj1.toString(); //Throws a NullpointerException when this statement is executed.
 
         // 4.2 Instantiating a reference type
 
-        Object obj = new Object();
+        Object obj2 = new Object();
 
         /* Key notes
         Object = is a reference type

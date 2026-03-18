@@ -125,7 +125,7 @@ public class PractisingForLoop {
             rev = (rev * 10) + nums;
             n = n / 10;
         }
-        System.out.println(rev);
+        System.out.println("Reverse number is "+ rev);
 
         //Check Palindrome
 
