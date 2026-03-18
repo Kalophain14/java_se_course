@@ -38,19 +38,36 @@ public class FibonacciSeries {
     public static void main(String[] args) {
 
         //AP Series Challange
-        Scanner sc = new Scanner(System.in);
+        Scanner ap = new Scanner(System.in);
 
         System.out.println("Program to print AP Series");
         System.out.println("Enter a, d and n");
-        int a = sc.nextInt();
-        int d = sc.nextInt();
-        int n = sc.nextInt();
+        int a = ap.nextInt();
+        int d = ap.nextInt();
+        int n = ap.nextInt();
 
         int term = a;
 
         for (int i = 0; i<n; i++){
             System.out.print(term + ",");
             term = term + d; //get the next term and print next term until i == n
+        }
+
+        //Display GP Series
+
+        Scanner gp = new Scanner(System.in);
+
+        System.out.println("Program to print GP Series");
+        System.out.println("Enter b e and o");
+        int b = gp.nextInt();
+        int e = gp.nextInt();
+        int o = gp.nextInt();
+
+        int term2 = o;
+
+        for (int g = 0; g < o; g++){
+            System.out.print(term2 + ",");
+            term2 = term2*e;
         }
     }
 }
