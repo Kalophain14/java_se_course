@@ -112,7 +112,7 @@ public class PractisingForLoop {
             System.out.println(armstrong + " is NOT an Armstrong number ❌");
         }
 
-        // Reverse the number + Input
+        // Reverse the number + Input for user
         System.out.println("Enter the reversal number");
         int reversal = sc.nextInt();
 
@@ -127,7 +127,7 @@ public class PractisingForLoop {
         }
         System.out.println("Reverse number is "+ rev);
 
-        //Check Palindrome
+        //Checking Palindrome
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a palindrome number or word: ");
