@@ -33,9 +33,9 @@
  *        └─────────┘
  *
  *  SYNTAX:
- *    for (int i = 1; i <= rows; i++) {       // outer
- *        for (int j = 1; j <= cols; j++) {   // inner
- *            // body
+ *    for (int i = 1; i <= rows; i++) {       // outer loop
+ *        for (int j = 1; j <= cols; j++) {   // inner loop
+ *            // body code
  *        }
  *    }
  * ============================================================
@@ -43,5 +43,14 @@
 public class NestedLoops {
 
     public static void main(String[] args) {
+
+        //Nested behavior is two dimension
+        for(int i = 0; i <= 6; i++){ //outer
+            //System.out.println(i);
+            for (int t = 0; t <= 5; t++){ //inner
+                System.out.print("("+i+" , "+t+") ");
+            }
+            System.out.println("");
+        }
     }
 }
