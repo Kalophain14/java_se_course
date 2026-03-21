@@ -77,9 +77,9 @@ public class FibonacciSeries {
 
         int aFib = 0;
         int bFib = 1;
-        //int count = 0;
 
-        /*while (count < fib) {
+        /*int count = 0;
+        while (count < fib) {
             System.out.print(aFib + " ,");
             int next = aFib + bFib;
             aFib = bFib;
