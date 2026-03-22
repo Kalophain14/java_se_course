@@ -77,7 +77,7 @@ public class Patterns2 {
         // Bottom half
         for (int i = 1; i < n; i++)
         {
-            for (int j = 1; j <= i; j++)
+            for (int j = 1; j <= i; j++) //spaces increases as i grows
             {
                 System.out.print("  ");
             }
@@ -85,7 +85,7 @@ public class Patterns2 {
             {
                 System.out.print("* ");
             }
-            for (int j = 1; j < n - i; j++)
+            for (int j = 1; j < n - i; j++) //stars decreases each row
             {
                 System.out.print("* ");
             }
