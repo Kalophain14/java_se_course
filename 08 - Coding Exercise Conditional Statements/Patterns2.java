@@ -28,13 +28,31 @@
  */
 public class Patterns2 {
 
-    public static void main(String[] args) {
-        for(int i = 1; i <= 5; i++){
-            //System.out.print(i + " ");
-            for(int j = 1; j <=5-i+1; j++){
-                System.out.print("*");
+    public static void main(String[] args){
+        int rows = 5;
+        int[] triangle = new int[rows]; //arrays stores the num from the rows
+
+
+        for (int i = 0; i < rows; i++) {
+
+            //spaces for the triangle loop
+            for (int space = 0; space < rows - i - 1; space++) {
+                System.out.print("   ");
             }
-            System.out.println(" ");
+
+            // calculating num of rows walking backwards using the array
+            for (int j = i; j > 0; j--) {
+                triangle[j] = triangle[j] + triangle[j - 1];
+            }
+
+            triangle[0] = 1;
+
+            //print num in rows
+            for (int j = 0; j <= i; j++) {
+                System.out.print(triangle[j] + "   ");
+            }
+
+            System.out.println();
         }
     }
 }
