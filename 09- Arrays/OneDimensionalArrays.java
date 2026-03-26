@@ -23,7 +23,7 @@ public class OneDimensionalArrays {
         num[3] = 8;
         num[4] = 10;
 
-        int numA[] = {2, 4, 6, 8, 10}; //creating an array knowing the values
+        int numA[] = {4, 2, 6, 8, 10}; //creating an array knowing the values
 
         int numB[]; //declare a reference
         numB = new int[10]; //creating an object after
