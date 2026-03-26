@@ -28,6 +28,9 @@ public class OneDimensionalArrays {
         int numB[]; //declare a reference
         numB = new int[10]; //creating an object after
 
+
+
+        // Exercises
         for(int i = 0; i < num.length; i++) {
             System.out.println(num[i]++);
         }
