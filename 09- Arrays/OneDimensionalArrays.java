@@ -32,7 +32,7 @@ public class OneDimensionalArrays {
 
 
 
-        // Exercises
+        // Challanges
 
         //Length of an Array
         for(int i = 0; i < num.length; i++) {
