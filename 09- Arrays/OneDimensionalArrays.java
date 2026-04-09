@@ -25,29 +25,28 @@ public class OneDimensionalArrays {
         num[3] = 8;
         num[4] = 10;
 
-        int numA[] = {4, 2, 6, 8, 10}; //creating an array knowing the values
+        int numA[] = {40, 20, 60, 8, 10}; //creating an array knowing the values
 
         int numB[]; //declare a reference
         numB = new int[10]; //creating an object after
 
 
-
-        // Challanges
+        // Challenges
 
         //Length of an Array forward and backward
         for(int i = 0; i < num.length; i++) {
-            System.out.println(num[i]++);
+            System.out.println(num[i]);
         }
 
         //using for each loop easiest way to access the array
         // using a for each loop only in forward directions
-        for(int i: num){
-            System.out.println(i);
+        for(int x: numA){
+            System.out.println(x);
         }
 
         //reverse
-        for(int i = num.length -1; i>=0; i--){
-            System.out.println(num[i]);
+        for(int a = num.length -1; a>=0; a--){
+            System.out.println(num[a]);
         }
     }
 }
