@@ -34,7 +34,7 @@ public class OneDimensionalArrays {
 
         // Challanges
 
-        //Length of an Array
+        //Length of an Array forward and backward
         for(int i = 0; i < num.length; i++) {
             System.out.println(num[i]++);
         }
