@@ -17,6 +17,7 @@ public class StudentChallengeFindArray {
 
         //-----------------------------------------//
 
+        /*
         //02 - Searching through an element
         Scanner sc = new Scanner(System.in); //asking user to enter their key
         System.out.println("Enter your key");
@@ -29,18 +30,34 @@ public class StudentChallengeFindArray {
             }
         }
         System.out.println("Not found");
+        */
 
         //----------------------------------------//
 
         //03 - Finding a maximum element
+        int max = num[0]; //starting from 0 index
 
-
-
+        for(int x = 0; x < num.length; x++){ //accessing the length of the array
+            if(num[x] > max){
+                max = num[x]; //stores the maximum num as it iterate through finding the maximum number
+            }
+        }
+        System.out.println("The maximum number is: " + max);
 
         //----------------------------------------//
 
+        //04 - Finding second-largest element
+        int max1, max2;
+        max1 = max2 = num[0]; //starting from 0 index
 
-
-        //04 - Finding second largest element
+        for(int x = 0; x < num.length; x++){ //accessing the length of the array
+            if(num[x] > max1){ //is num bigger than the maximum number?
+                max2 = max1; // saves the current max into max2
+                max1 = num[x]; //stores the new maxNum as the largest
+            } else if (num[x] > max2){
+                max2 = num[x]; //not bigger than max1 but is it bigger than max2? and stores the number
+            }
+        }
+        System.out.println("The sec largest number is: " + max2);
     }
 }
