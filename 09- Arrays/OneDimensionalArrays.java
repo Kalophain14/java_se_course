@@ -4,7 +4,7 @@ Arrays
 
 What is an array = a collection of similar data elements int, double, etc
 - You cant store different data types in array for example x = [2, 4, 4, 6, 10]
-- any array has a lenth of an array
+- any array has a length of an array
 
  */
 
