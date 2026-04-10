@@ -4,7 +4,6 @@ public class StudentChallengeRotate {
         // Student Challenge - Rotate
 
         // 01 - Rotating an Array - Shift to left first index becomes last index
-
         int num[] = {5, 9, 6, 10, 12, 7, 3, 5, 4, 2};
 
         //printing all elements of the original array
@@ -23,5 +22,19 @@ public class StudentChallengeRotate {
         for (int x: num)
             System.out.print(x+ ",");
         System.out.println("");
+
+        //-------------------------------
+
+        // 02 - Inserting an element
+        //printing all elements of the original array
+        for (int x: num)
+            System.out.print(x+ ",");
+        System.out.println("");
+
+
+        //-------------------------------
+        // 03 - Deleting an element
+
+        //-------------------------------
     }
 }
