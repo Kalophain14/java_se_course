@@ -14,7 +14,7 @@ public class StudentChallengeRotate {
         //left rotate the array by one position
         int temp = num[0]; //stores first index before being overwritten
         for(int i = 1; i < num.length; i++){
-            num[i-1] = num[i]; //shifting each element
+            num[i-1] = num[i]; //shifting from left
         }
         num[num.length -1] = temp; //storing the array from the last index rotation completed
 
@@ -40,7 +40,7 @@ public class StudentChallengeRotate {
         insert[8] = 18;
         insert[9] = 20;
 
-        //before
+        //before inserting
         for (int x: insert)
             System.out.print(x+ ",");
         System.out.println("");
@@ -49,7 +49,7 @@ public class StudentChallengeRotate {
         int insertIndex = 5; //where the element will go
 
         for(int i = insert.length - 1; i > insertIndex; i--){
-            insert[i] = insert[i - 1];
+            insert[i] = insert[i - 1]; //shifting from right
         }
         insert[insertIndex] = element; //index freedUp
 
@@ -60,6 +60,22 @@ public class StudentChallengeRotate {
 
         //-------------------------------
         // 03 - Deleting an element
+
+        // before deleting
+        for (int x: insert)
+            System.out.print(x+ ",");
+        System.out.println(" ");
+
+        int deleteIndex = 5;
+
+        for(int i = deleteIndex; i < insert.length - 1; i++){
+            insert[i] = insert[i + 1]; //shifting left
+        }
+        insert[insert.length -1] = 0; //stores 0 to the last index deleted
+
+        // after deleting
+        for (int x: insert)
+            System.out.print(x+ ",");
 
         //-------------------------------
     }
