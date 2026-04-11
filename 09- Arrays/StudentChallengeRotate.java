@@ -92,9 +92,9 @@ public class StudentChallengeRotate {
         System.out.println("");
 
         if (swapElement[swap] < swapElement[swap + 1]) {
-            int store = swapElement[swap];
-            swapElement[swap] = swapElement[swap + 1];
-            swapElement[swap + 1] = store;
+            int store = swapElement[swap]; //save current element
+            swapElement[swap] = swapElement[swap + 1]; //put current next to the next position
+            swapElement[swap + 1] = store; //saved element next to the neighbor position
         }
 
         System.out.print("After:  ");
