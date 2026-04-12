@@ -47,8 +47,8 @@ public class StudentChallengeIncrease {
 
         //Increasing an array
         System.out.println("=== Increasing an Arrayy ===");
-        int BiggerA[] = {10, 20, 30, 40, 50, 60};
-        int BiggerB[] = new int[8];
+        int BiggerA[] = {10, 20, 30, 40, 50};
+        int BiggerB[] = new int[10];
 
         System.out.print("Before: ");
         for (int x :BiggerA)
