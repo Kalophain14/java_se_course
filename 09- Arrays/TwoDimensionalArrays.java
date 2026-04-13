@@ -18,9 +18,9 @@ public class TwoDimensionalArrays {
         To access the row and column, you need to either of nested for loop and for each
         */
 
-        int A[][] = {{1,2,3,4},{5,6,7,8},{2,6,8,10}};
+        System.out.println("=== Accessing Using For Loop");
 
-        //Accessing the 2D Array
+        int A[][] = {{1,2,3,4},{5,6,7,8},{2,6,8,9}};
 
         //rows
         for(int i = 0; i<A.length; i++)
@@ -28,9 +28,21 @@ public class TwoDimensionalArrays {
             //column
             for(int j = 0; j<A[0].length; j++)
             {
-                System.out.print(A[0][j]);
+                System.out.print(A[i][j]);
             }
-            System.out.println("\n");
+            System.out.print("\n");
+        }
+
+        System.out.println("=== Accessing Using For Each");
+
+        int B[][] = {{4,2,3,1},{1,2,3,5},{3,5,6,8}};
+
+        for (int x[]:B) {
+            //column
+            for (int y:x) {
+                System.out.print(y);
+            }
+            System.out.print("\n");
         }
     }
 }
