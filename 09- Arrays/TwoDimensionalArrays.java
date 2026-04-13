@@ -18,7 +18,7 @@ public class TwoDimensionalArrays {
         To access the row and column, you need to either of nested for loop and for each
         */
 
-        System.out.println("=== Accessing Using For Loop");
+        System.out.println("===Accessing Using For Loop===");
 
         int A[][] = {{1,2,3,4},{5,6,7,8},{2,6,8,9}};
 
@@ -33,7 +33,7 @@ public class TwoDimensionalArrays {
             System.out.print("\n");
         }
 
-        System.out.println("=== Accessing Using For Each");
+        System.out.println("===Accessing Using For Each===");
 
         int B[][] = {{4,2,3,1},{1,2,3,5},{3,5,6,8}};
 
@@ -43,6 +43,19 @@ public class TwoDimensionalArrays {
                 System.out.print(y);
             }
             System.out.print("\n");
+        }
+
+        System.out.println("===Jagged Array===");
+        //an array of arrays where each row can have a different number of columns
+
+        int jagged[][] = {{3,4,9,2},{1,2,},{5,6,8}};
+
+        // Print using for-each loop
+        for(int[] row : jagged) { //for each row
+            for(int value : row) { //for each value in the row
+                System.out.print(value + " ");
+            }
+            System.out.println();
         }
     }
 }
