@@ -50,7 +50,7 @@ public class TwoDimensionalArrays {
 
         int jagged[][] = {{3,4,9,2},{1,2,},{5,6,8}};
 
-        // Print using for-each loop
+        // Using for-each loop
         for(int[] row : jagged) { //for each row
             for(int value : row) { //for each value in the row
                 System.out.print(value + " ");
