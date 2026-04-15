@@ -46,7 +46,7 @@ public class TwoDimensionalArrays {
         }
 
         System.out.println("===Jagged Array===");
-        //an array of arrays where each row can have a different number of columns
+        //array of arrays where each row can have a different number of columns
 
         int jagged[][] = {{3,4,9,2},{1,2,},{5,6,8}};
 
