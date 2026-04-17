@@ -15,8 +15,6 @@ returnType methodName (Parameters List){
 
 public class WhatAreMethods {
 
-    //Example method that returns a larger num
-
     //Definition of a Method
     static int maximum(int x, int y)
     {
@@ -28,8 +26,10 @@ public class WhatAreMethods {
     //Calling the Method
     public static void main(String[] args) {
 
+        System.out.println("===Maximum Method===");
+
         int a = 20, b = 150, c;
         c = maximum(a,b);
-        System.out.println(c);
+        System.out.println("Max Number:" + c);
     }
 }
