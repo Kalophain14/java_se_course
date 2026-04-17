@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class PassingObjectAsParameter
 {
-    //Updating an array method
+    //Updating array Method
     static void update(int A[]) //passing an empty array as a parameter
     {
         A[0] = 25;
     }
 
-    //Username method
+    //Username Extractor Method
     static String userName(String email) {
         int a = email.indexOf('@'); //searches for the name before it reaches @
         String name = email.substring(0, a); //cuts until the @ sign
@@ -17,13 +17,14 @@ public class PassingObjectAsParameter
 
     public static void main(String[] args)
     {
-        // Passing Object as Parameter
+        //Passing Object as Parameter
+        System.out.println("===Updating Array===");
         int A[]={2,3,4,5,6};
         update(A);
         System.out.println(A[0]);
 
         //Username
-        System.out.println("===Extracting Username==");
+        System.out.println("===Extracting Username===");
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your email: ");
