@@ -29,8 +29,17 @@ public class WhatAreMethods {
 
         System.out.println("===Maximum Method===");
 
+        //Option 1
         int a = 20, b = 150, c;
         c = maximum(a,b); //actual parameters
         System.out.println("Max Number:" + c);
+
+        //Option 2
+        System.out.println(maximum(a,b));
+
+        //Option 3 Using a constructor as an object
+        WhatAreMethods wme = new WhatAreMethods();
+        System.out.println(wme.maximum(a,b));
+
     }
 }
