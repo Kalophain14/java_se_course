@@ -16,6 +16,7 @@ returnType methodName (Parameters List){
 public class WhatAreMethods {
 
     //Definition of a Method
+    //Formal parameters only change but they dont affect actual parameters
     static int maximum(int x, int y)
     {
         if (x > y)
@@ -29,7 +30,7 @@ public class WhatAreMethods {
         System.out.println("===Maximum Method===");
 
         int a = 20, b = 150, c;
-        c = maximum(a,b);
+        c = maximum(a,b); //actual parameters
         System.out.println("Max Number:" + c);
     }
 }
