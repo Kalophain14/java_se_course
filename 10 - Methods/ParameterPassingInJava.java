@@ -21,7 +21,7 @@ public class ParameterPassingInJava {
     public static void main(String[] args) {
 
         /*Primitive Method Calling*/
-        int a = 10, b = 5, c;
+        int a = 11, b = 35, c;
         c = add(a, b);
         System.out.println(c); // prints 15
 
