@@ -17,11 +17,10 @@ public class ParameterPassingInJava {
     static String welcome(String n) {
         return "Welcome Mr/Miss " + n;
     }
-
     public static void main(String[] args) {
 
         /*Primitive Method Calling*/
-        int a = 11, b = 35, c;
+        int a = 20, b = 50, c;
         c = add(a, b);
         System.out.println(c); // prints 15
 
