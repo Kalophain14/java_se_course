@@ -1,4 +1,4 @@
-public class SCFindPrime
+public class StudentChallanges
 {
     /*Find Prime number*/
     static boolean isPrime(int n)
