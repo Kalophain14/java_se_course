@@ -12,7 +12,7 @@ public class StudentChallanges
 
     public static void main(String[] args)
     {
-        if(isPrime(2))
+        if(isPrime(100))
             System.out.println("it is a prime Num");
         else
             System.out.println("is not a prime Num");
