@@ -12,9 +12,9 @@ public class StudentChallanges
 
     public static void main(String[] args)
     {
-        if(isPrime(19))
-            System.out.println("it is a primeNumber");
+        if(isPrime(2))
+            System.out.println("it is a prime Num");
         else
-            System.out.println("is not a primeNumber");
+            System.out.println("is not a prime Num");
     }
 }
