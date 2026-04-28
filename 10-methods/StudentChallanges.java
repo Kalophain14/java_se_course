@@ -10,7 +10,10 @@ public class StudentChallanges
         } return true;
     }
 
+    /* Using the methods*/
     public static void main(String[] args)
+
+    
     {
         if(isPrime(100)){
             System.out.println("prime Num");
