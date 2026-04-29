@@ -14,10 +14,10 @@ public class StudentChallanges
     public static void main(String[] args)
     {
         if(isPrime(100)){
-            System.out.println("prime Num");
+            System.out.println("prime Number");
         }
         else{
-            System.out.println("not a prime Num");
+            System.out.println("not a prime Number");
         }
     }
 }
