@@ -12,8 +12,6 @@ public class StudentChallanges
 
     /* Using the methods*/
     public static void main(String[] args)
-
-    
     {
         if(isPrime(100)){
             System.out.println("prime Num");
