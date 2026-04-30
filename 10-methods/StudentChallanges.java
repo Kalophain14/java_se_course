@@ -11,7 +11,6 @@ public class StudentChallanges
     }
 
     /*Find HighestCommonNumbers of 2 numbers*/
-
     static int HCG(int m, int n)
     {
         while (m != n) {
