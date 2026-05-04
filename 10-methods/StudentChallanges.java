@@ -23,6 +23,18 @@ public class StudentChallanges
         return n;
     }
 
+    /*Find Max Element in an Array*/
+
+    static int maxArray(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
     /* Using the methods*/
     public static void main(String[] args)
     {
@@ -34,8 +46,12 @@ public class StudentChallanges
             System.out.println("not a prime Number");
         }
 
-        //HCG MethodCalling
+        //HCG Method Calling
         System.out.println("The highest number is: " + HCG(50,15));
+
+        //MaxArray Calling
+        int[] arr = {3, 7, 1, 6, 12, 129};
+        System.out.println("Maximum number: " + maxArray(arr));
     }
 }
 
