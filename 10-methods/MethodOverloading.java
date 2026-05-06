@@ -22,6 +22,6 @@ public class MethodOverloading {
          You can have as many as parameters as you want
          */
 
-            System.out.println(max(70, 39, 55));
+            System.out.println(max(39, 55));
         }
 }
