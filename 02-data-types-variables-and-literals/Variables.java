@@ -10,11 +10,11 @@ public class Variables {
         // 🟥 Primitive = simple value stored directly in memory (stack)
         // 🟦 Reference = memory address (stack) that points to the (heap)
 
-        // 🟥 Primitive vs 🟦 Reference
-        //    ---------                      ---------
-        //    int                           string
-        //    double                    array
-        //    char                        object
+        // 🟥 Primitive vs  🟦 Reference
+        //    ---------         ---------
+        //    int               string
+        //    double            array
+        //    char              object
         //    boolean
 
         int age = 21;
