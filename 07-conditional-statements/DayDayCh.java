@@ -28,6 +28,8 @@ false   false   false   false   true
 
 */
 
+import java.util.Scanner;
+
 public class DayDayCh {
 
     public static void main(String[] args) {
@@ -52,5 +54,26 @@ public class DayDayCh {
         }
 
         System.out.println("==============================================");
+        
+        Scanner input = new Scanner(System.in);
+        int age;
+
+        System.out.println("Enter your age: ");
+        age = input.nextInt();
+
+        if(age >= 65){
+            System.out.println("You are a senior.");
+        }
+        else if(age >= 18){
+            System.out.println("You are a teenager.");
+        } else if (age < 0) {
+            System.out.println("You haven't been born yet!");
+        } else if (age == 0) {
+            System.out.println("You are a baby.");
+        } else {
+            System.out.println("You are a child");
+        }
+
+        input.close();
     }
 }
