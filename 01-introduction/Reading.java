@@ -32,5 +32,7 @@ public class Reading{
 
         //int sum = x + y;
         System.out.println("The binary is" + " " + x);
-            }
+
+        sc.close();
+    }
 }
