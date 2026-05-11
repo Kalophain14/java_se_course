@@ -28,7 +28,7 @@ public class Reading{
         //y=sc.nextInt();
 
         sc.useRadix(2);
-       int x=sc.nextInt();
+        int x=sc.nextInt();
 
         //int sum = x + y;
         System.out.println("The binary is" + " " + x);
