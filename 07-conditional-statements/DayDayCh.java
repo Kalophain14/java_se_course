@@ -66,7 +66,7 @@ public class DayDayCh {
         System.out.println("Enter your age: ");
         age = input.nextInt();
 
-        System.out.println("Are you a student true/false?: ");
+        System.out.print("Are you a student true/false?: ");
         isStudent = input.nextBoolean();
         
         //Program 1: Name
