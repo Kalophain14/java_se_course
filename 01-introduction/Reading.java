@@ -27,11 +27,20 @@ public class Reading{
         //x=sc.nextInt();
         //y=sc.nextInt();
 
-        sc.useRadix(2);
-        int x=sc.nextInt();
+        //sc.useRadix(2);
+        //int x=sc.nextInt();
 
         //int sum = x + y;
-        System.out.println("The binary is" + " " + x);
+        //System.out.println("The binary is" + " " + x);
+
+        System.out.println("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Enter your age");
+        int age = sc.nextInt();
+
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age + " years old");
 
         sc.close();
     }
