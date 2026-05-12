@@ -54,7 +54,10 @@ public class DayDayCh {
         }
 
         System.out.println("==============================================");
-        
+
+
+
+        //If-Else Statements dived
         Scanner input = new Scanner(System.in);
 
         String name;
@@ -71,7 +74,6 @@ public class DayDayCh {
         isStudent = input.nextBoolean();
         
         //Program 1: Name
-
         if (name.isEmpty()){
             System.out.println("You didnt enter your name");
         } else{
