@@ -56,9 +56,10 @@ public class DayDayCh {
         System.out.println("==============================================");
         
         Scanner input = new Scanner(System.in);
+
         String name;
         int age;
-        boolean isStudent;
+        boolean isStudent; //True/False
 
         System.out.println("Enter your name: ");
         name = input.nextLine();
