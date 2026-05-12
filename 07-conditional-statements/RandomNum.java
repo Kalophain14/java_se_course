@@ -19,5 +19,23 @@ public class RandomNum {
         } else {
             System.out.println("The coinflipped is TAIL");
         }
+        
+        //Math Classes
+
+        System.out.println("This is a Pie: " + Math.PI);
+
+        double result;
+        double num2;
+        num2 = Math.pow(2, 5); //power/exponents
+        //result = Math.abs(-5); //changes - to + num
+        //result = Math.sqrt(9); //sqaureroot
+        //result = Math.round(3.14); //round a number to the nearest whole integer 3.0
+        //result = Math.ceil(3.14); //round up 4.0
+        //result = Math.floor(3.99 ); //round down 3.0
+        //result = Math.max(10, 3); //maximum number
+        result = Math.min(20, 100); //minimum number
+
+        System.out.println("Power of num is: " + num2);
+        System.out.println("Math: " + result);
     }
 }
