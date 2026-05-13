@@ -16,7 +16,7 @@ public class TempConverter {
         System.out.println("Convert to Celsius or Fahrenheit? (C or F) :");
         unit = input.next().toUpperCase();
 
-        //Check Conditions
+        //Check Conditions for the temperature
         newTemp = (unit.equals("C")) ? (temp -32) * 5 / 9 : (temp * 5 / 9) + 32;
 
         System.out.println("The temperature is " + newTemp);
