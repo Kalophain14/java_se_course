@@ -31,7 +31,6 @@ public class SwitchCasePr {
         }
 
         //domain exercise
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a domain"); //asking user to enter their domain
         String domain = scan.nextLine(); //storing the domain
