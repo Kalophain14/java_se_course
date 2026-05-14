@@ -56,6 +56,5 @@ public class SwitchCasePr {
             default:
                 System.out.println("Invalid domain");
         }
-
     }
 }
