@@ -36,7 +36,9 @@ public class SwitchCasePr {
         System.out.println("Enter a domain"); //asking user to enter their domain
         String domain = scan.nextLine(); //storing the domain
 
-        String ext = domain.substring(domain.lastIndexOf(".")+1); //gives out the string starting from . going backwards also other characters
+        String ext = domain.substring(domain.lastIndexOf(".")+1);
+        //gives out the string starting from (.)
+        //going backwards also other characters
 
         switch(ext){
             case "com":

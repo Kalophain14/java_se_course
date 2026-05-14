@@ -31,9 +31,9 @@ public class Patterns1 {
 
         //Patter A
 
-        for(int i = 1; i <= 5; i++){
+        for(int i = 1; i <= 7; i++){
              //System.out.print(i + " ");
-            for(int j = 1; j <=5-i+1; j++){
+            for(int j = 1; j <=7-i+1; j++){
                 System.out.print("*");
             }
             System.out.println(" ");

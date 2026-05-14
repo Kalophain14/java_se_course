@@ -2,7 +2,8 @@
 Switch Cases
 
 
-int day = 1; *this states where the switch cases directed/starts at
+int day = 1;
+this states where the switch cases directed/starts at
 
 switch(day)
 case 1: sout("Mon");
@@ -22,4 +23,6 @@ break;
 - Useful when working on manual driven programmes
 - They like buttons easier to use and not heavy
  */
+
+
 
