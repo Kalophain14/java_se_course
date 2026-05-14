@@ -24,6 +24,8 @@ break;
 - They like buttons easier to use and not heavy
  */
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class SwitchCase {
@@ -31,7 +33,6 @@ public class SwitchCase {
         /*
         Enhance switch = A replacement to many else if statement
         -> do this
-         */
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the day you prefer: ");
@@ -44,6 +45,35 @@ public class SwitchCase {
                     System.out.println("It is the weekend");
             default -> System.out.println(day + " it isn't a day");
         }
+        */
+
+        //Calculator
+        Scanner cal = new Scanner(System.in);
+        double num1;
+        double num2;
+        char operator;
+        double result = 0;
+
+        System.out.print("Enter the first number: ");
+        num1 = cal.nextDouble();
+
+        System.out.print("Enter an operator (+, -, */, ^): ");
+        operator = cal.next().charAt(0);
+
+        System.out.print("Enter the second number: ");
+        num2 = cal.nextDouble();
+
+        switch (operator) {
+            case '+' -> result = num1 + num2;
+            case '-' -> result = num1 - num2;
+            case '*' -> result = num1 * num2;
+            case '/' -> result = num1 / num2;
+            case '^' -> result = Math.pow(num1, num2);
+            default -> System.out.println("Wrong input");
+        }
+        System.out.println(result);
+
+        cal.close();
     }
 }
 
