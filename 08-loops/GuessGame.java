@@ -9,10 +9,12 @@ public class GuessGame {
         
         int guess;
         int attempts = 0;
-        int randonNumber = rand.nextInt(1, 11);
+        int min = 1;
+        int max = 10;
+        int randonNumber = rand.nextInt(min, max + 1);
 
         System.out.println("==Number Guessing Game==");
-        System.out.println("Guess a number between 1 to 10: ");
+        System.out.printf("Guess a number between %d-%d\n: ", min, max);
 
         do {
             System.out.print("Enter a number: ");
@@ -24,8 +26,8 @@ public class GuessGame {
             } else if (guess > randonNumber) {
                 System.out.println("Too high, try again!");
             } else {
-                System.out.println("You guessed the correct number!" + randonNumber);
-                System.out.println("# of attempts made: " + attempts);
+                System.out.println("You guessed the correct number!: " + randonNumber);
+                System.out.println("number of attempts made: " + attempts);
             }
 
         }while(guess != randonNumber);
