@@ -4,6 +4,12 @@ What Are Methods?
 - They are members of a class that gives functionality to the class e.g
 length(), indexOf(), equals(), Substring()
 - They can also return a void, integer, string etc
+- Methods are unfamiliar with variables called on another methods
+- You can always use arguements to pass
+- Three types of Methods
+Methods that only prints
+Methods that uses arguements and prints
+Methods that takes input and return a value which will be stored for a print out
 
 Skeleton of a method
 returnType methodName (Parameters List){
@@ -24,9 +30,13 @@ public class WhatAreMethods {
         else
             return y;
     }
+
+    static void happyBirthday(){
+        System.out.println("Happy Birthday");
+    }
+
     //Calling the Method
     public static void main(String[] args) {
-
         System.out.println("===Maximum Method===");
 
         //Option 1
@@ -40,6 +50,8 @@ public class WhatAreMethods {
         //Option 3 Using a constructor as an object
         WhatAreMethods wme = new WhatAreMethods();
         System.out.println(wme.maximum(a,b));
+
+        happyBirthday();
 
     }
 }
