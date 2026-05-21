@@ -15,14 +15,15 @@ public class ParameterPassingInJava {
     * Java passes memory address aka reference of the object
     * */
     static String welcome(String n) {
+
         return "Welcome Mr/Miss " + n;
     }
     public static void main(String[] args) {
 
         /*Primitive Method Calling*/
         int a = 20, b = 50, c;
-        c = add(a, b);
-        System.out.println(c); // prints 15
+        //c = add(a, b);
+        System.out.println(add(60,10)); // prints 15
 
         /*String Passing Calling*/
         String name = "Victor";
