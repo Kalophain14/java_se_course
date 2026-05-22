@@ -10,20 +10,25 @@ public class DiceGame {
         Scanner input = new Scanner(System.in); //accept user input
         Random rand = new Random(); //get random numbers
         int numOfDice;
-        int total;
+        int total = 0;
 
+        //Get # Of Dice From the user
         System.out.print("Enter the number of dice to roll: ");
         numOfDice = input.nextInt();
-        
-        //Get # Of Dice From the user
-        
+
+        //Check if # of Dice > 0
         if (numOfDice > 0){
-            System.out.println("You rolled the dice");
+            for (int i = 1; i < numOfDice; i++) {
+                int roll = rand.nextInt(6) + 1;
+                System.out.println("You rolled: " + roll);
+                total += roll;
+            }
+            System.out.println("Total: " + total);
         } else {
             System.out.println("Number of dice must be greater than 0");
         }
 
-        //Check if # of Dice > 0
+
 
         //Roll all the Dice
 
