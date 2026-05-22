@@ -5,6 +5,7 @@ public class DiceGame {
 
     public static void main(String[] args) {
 
+
         //Java Dice Roller Program
 
         Scanner input = new Scanner(System.in); //accept user input
@@ -16,10 +17,12 @@ public class DiceGame {
         System.out.print("Enter the number of dice to roll: ");
         numOfDice = input.nextInt();
 
-        //Check if # of Dice > 0
+        //Check Dice > 0 & Roll all the Dice + Get Total
         if (numOfDice > 0){
             for (int i = 1; i < numOfDice; i++) {
                 int roll = rand.nextInt(6) + 1;
+                printDice(roll); //Method Calling Dice
+
                 System.out.println("You rolled: " + roll);
                 total += roll;
             }
@@ -28,12 +31,63 @@ public class DiceGame {
             System.out.println("Number of dice must be greater than 0");
         }
 
+        input.close();
+    }
+    static void printDice(int roll) {
+        System.out.println("Roll: " + roll);
 
+        String dice = switch (roll) {
+            case 1 -> """
+                 -------
+                |       |
+                |   •   |
+                |       |
+                 -------
+                """;
 
-        //Roll all the Dice
+            case 2 -> """
+                 -------
+                | •     |
+                |       |
+                |     • |
+                 -------
+                """;
 
-        //Get the total
+            case 3 -> """
+                 -------
+                | •     |
+                |   •   |
+                |     • |
+                 -------
+                """;
 
-        //Display ASCCI DICE
+            case 4 -> """
+                 -------
+                | •   • |
+                |       |
+                | •   • |
+                 -------
+                """;
+
+            case 5 -> """
+                 -------
+                | •   • |
+                |   •   |
+                | •   • |
+                 -------
+                """;
+
+            case 6 -> """
+                 -------
+                | •   • |
+                | •   • |
+                | •   • |
+                 -------
+                """;
+
+            default -> "Invalid roll: must be 1–6";
+        };
+
+        System.out.println(dice);
     }
 }
