@@ -1,0 +1,31 @@
+/*
+
+
+Array = a collection of values of the same data type
+ */
+
+import java.util.Arrays;
+
+public class WhatArray {
+    public static void main(String[] args) {
+        String[] fruits = {"Apple", "Banana", "Kiwi", "Orange"};
+
+        //fruits [0] = "Pinapple"; //Changing value inside an array
+        //int numFruits = fruits.length; //Getting the length
+        //Arrays.sort(fruits); //Alphabetically
+        //Arrays.fill(fruits, "Apple");
+
+        //System.out.println(fruits[0]);
+        //System.out.println(numFruits);
+
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]);
+        }
+        System.out.println();
+
+        //For Each Loop
+        for(String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+}
