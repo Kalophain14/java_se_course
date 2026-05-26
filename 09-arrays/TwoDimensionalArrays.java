@@ -68,6 +68,23 @@ public class TwoDimensionalArrays {
             for(String food : foods) { //value per row
                 System.out.print(food + " ");
             }
+            System.out.println();
+        }
+
+        System.out.println("===Call Me===");
+        char [][] telephone = {
+                                {'1', '2', '3'},
+                                {'3', '5', '6'},
+                                {'7', '8', '9'},
+                                {'*', '0', '#'}};
+
+        //telephone [2][1] = '7'; //Changing an item
+
+        for(char[] callme : telephone){
+            for(char dail : callme){
+                System.out.print(dail + " ");
+            }
+            System.out.println();
         }
     }
 }
