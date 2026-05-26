@@ -57,5 +57,17 @@ public class TwoDimensionalArrays {
             }
             System.out.println();
         }
+        
+        //Food Anology
+        System.out.println("===Food 2D Array===");
+        String [][] groceries = {{"apple, banana, potato"},
+                                {"chicken, wors, beef"},
+                                {"soup, pasta, pap"}};
+        
+        for(String [] foods : groceries) { //column
+            for(String food : foods) { //value per row
+                System.out.print(food + " ");
+            }
+        }
     }
 }
