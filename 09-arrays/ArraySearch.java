@@ -3,14 +3,8 @@ import java.util.Scanner;
 public class ArraySearch {
     public static void main(String[] args) {
 
-
-         /*for (String fruit : fruits){
-            System.out.println(fruit);
-        }*/
-
         Scanner sc = new Scanner(System.in);
 
-        //int [] num = {1, 2, 3, 4, 5, 6, 7};
         String [] fruits = {"Burger", "Pizza", "Kota", "Orange"};
         boolean isFound = false;
         String target;
