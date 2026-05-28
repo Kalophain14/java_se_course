@@ -78,7 +78,7 @@ public class TwoDimensionalArrays {
                                 {'7', '8', '9'},
                                 {'*', '0', '#'}};
 
-        //telephone [2][1] = '7'; //Changing an item
+        telephone [2][1] = '7'; //Changing an item
 
         for(char[] callme : telephone){
             for(char dail : callme){
