@@ -19,7 +19,7 @@ public class ArraySearch {
                 break;
             }
         }
-        if (!isFound){
+        if (!isFound){ //! changes isFound True to False
             System.out.println("Element not found in the array");
         }
 

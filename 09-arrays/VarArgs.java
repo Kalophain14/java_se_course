@@ -7,7 +7,7 @@ public class VarArgs {
         (ellipsis)
          */
 
-        double result = average(1, 2, 3, 4, 6, 7, 8, 9, 10);
+        double result = average(1, 2, 3, 4, 6, 7, 8, 9, 10); //accepting any number of arguments
         System.out.printf("The Average of this numbers is: %.2f ", result);
     }
 
