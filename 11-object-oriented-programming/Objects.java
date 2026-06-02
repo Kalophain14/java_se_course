@@ -10,7 +10,8 @@ public class Objects {
                  .(attributes) let u access the attributes of the methods in constructor
          */
         
-        Car car = new Car(); //use case of using a method as an object
+        Car car1 = new Car(); //use case of using a method as an object
+        Car car2 = new Car();
 
         /*
         car.isRunning = true; //you can modify within the running
@@ -20,7 +21,6 @@ public class Objects {
         System.out.println("The vehicle price is " + car.price);
         System.out.println("The car is now running? " + car.isRunning);
         System.out.println(car.color);
-        */
 
         //Running the methods within the methods
         System.out.println(car.isRunning);
@@ -29,5 +29,9 @@ public class Objects {
         car.stop();
         System.out.println(car.isRunning);
         car.drive();
+        */
+
+        System.out.println("Car1 model is " + car1.model);
+        System.out.println("Car2 mode is " + car2.model);
     }
 }
