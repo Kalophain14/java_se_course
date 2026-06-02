@@ -97,7 +97,7 @@ public class  MontyJava {
 
         /*
         System.out.println("=== 4.d gen random num (3-6 print 1->n then n->1 ===");
-        int myRand = rand.nextInt(4) + 3; //0-4 to 3-
+        int myRand = rand.nextInt(4) + 3;
         System.out.println("Random num: " + myRand);
 
         // Forward loop
@@ -112,7 +112,7 @@ public class  MontyJava {
 
         /*
         System.out.println("===4.e No duplicate ===");
-        int myRand = rand.nextInt(4) + 3; //0-4 to 3-
+        int myRand = rand.nextInt(4) + 3;
         System.out.println("Random num: " + myRand);
 
         // Forward loop
@@ -127,7 +127,7 @@ public class  MontyJava {
 
         /*
         System.out.println("===4.f forward & reverse + side by side===");
-        int myRand = rand.nextInt(7) + 3; //3-9
+        int myRand = rand.nextInt(7) + 3;
 
         System.out.println("Random num: " + myRand);
 
