@@ -7,15 +7,18 @@ public class Car {
 
     public void run()
     {
-            System.out.println("Vroom Vroom Gone Kanje");
+        isRunning = true;
+        System.out.println("Vroom Vroom Gone Kanje");
     }
 
     void stop() {
-        System.out.println("You know stop");
+        isRunning = false;
+        System.out.println("You have to stop the car");
     }
 
     void drive()
     {
+        isRunning = true;
         System.out.println("You drive a " + color + " " + model);
     }
 }
