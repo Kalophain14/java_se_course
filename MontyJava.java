@@ -481,10 +481,11 @@ public class  MontyJava {
 
             //result in division
             System.out.println("\nScore: " + score + "/" + rounds);
-
             scanner.nextLine();
+
+            //User decide to play or no
             System.out.print("Play again? (yes/no): ");
-            playAgain = scanner.nextLine(); //User decide to play or no
+            playAgain = scanner.nextLine();
         }
 
         System.out.println("Bye " + name);
