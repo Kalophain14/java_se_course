@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -329,6 +330,7 @@ public class  MontyJava {
         }
         */
 
+        /*
         System.out.println("== 9a. Generate 10, Even & add sumofEven ==");
         int[] nums = new int[10];
         int sum = 0;
@@ -350,8 +352,142 @@ public class  MontyJava {
             }
         }
         System.out.println();
-        
         // Print sum
         System.out.println("Sum: " + sum);
+        */
+
+
+        /*
+        System.out.println("== 9c. Fill, Print & Sort Arrays ==");
+        int[] nums = new int[20];
+        // Fill array
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = rand.nextInt(100); // 0–99
+        }
+
+        // Print original array
+        System.out.println("Original:");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
+
+        // Sort array
+        Arrays.sort(nums);
+
+        // Print sorted array
+        System.out.println("Sorted:");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        */
+
+        /*
+        System.out.println("==Math Addition quiz ==");
+        int score = 0;
+
+        for (int i = 1; i <= 3; i++) {
+            int correctAnswer = addition(i);
+            int userAnswer = scanner.nextInt();
+
+            if (userAnswer == correctAnswer) {
+                System.out.println("Correct! ✅");
+                score++;
+            } else {
+                System.out.println("Wrong ❌ Correct answer: " + correctAnswer);
+            }
+        }
+
+        System.out.println("Quiz complete! Score: " + score + "/3");
+
+        scanner.close();
+    }
+
+    // Method to generate question and return correct answer
+    public static int addition ( int questionNo){
+        Random rand = new Random();
+
+        int num1 = rand.nextInt(20) + 1; // 1–20
+        int num2 = rand.nextInt(20) + 1; // 1–20
+
+        System.out.print("Question " + questionNo + ": What is "
+                + num1 + " + " + num2 + "? ");
+
+        return num1 + num2;
+        */
+
+
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        int rounds = 5;
+        String playAgain = "yes";
+
+        //handle A-Z a-z
+        while (playAgain.equalsIgnoreCase("yes")) {
+
+            int score = 0;
+            System.out.println("\nHi " + name + "!");
+
+            //Genrate 5 question using rounds
+            for (int i = 1; i <= rounds; i++) {
+                int num1 = rand.nextInt(20) + 1;
+                int num2 = rand.nextInt(20) + 1;
+
+                /*
+                Generates 0-3 mapping the user to one of the switch case
+                Which math operator to use
+                 */
+                int randNum = rand.nextInt(4);
+
+                int answer = 0;
+                String symbol = "";
+
+                //Switch Cases
+                switch (randNum) {
+                    case 0: //Addition
+                        answer = num1 + num2;
+                        symbol = "+";
+                        break;
+                    case 1: //Substraction
+                        answer = num1 - num2;
+                        symbol = "-";
+                        break;
+                    case 2: //Multiplication
+                        answer = num1 * num2;
+                        symbol = "*";
+                        break;
+                    case 3: //Division
+                        num2 = rand.nextInt(9) + 1; //avoids division by 0 start 1-9
+                        answer = rand.nextInt(10) + 1; //Generates correct number
+                        num1 = answer * num2;
+                        symbol = "/";
+                        break;
+                }
+
+                //Displays the question
+                //Division is also handled whereby the symbol is used to display the operands
+                System.out.print("Q" + i + ": " + num1 + " " + symbol + " " + num2 + " = ");
+                int user = scanner.nextInt();
+
+                //Checks answer
+                if (user == answer) {
+                    System.out.println("Correct");
+                    score++;
+                } else {
+                    System.out.println("Wrong Ans: " + answer);
+                }
+            }
+
+            //result in division
+            System.out.println("\nScore: " + score + "/" + rounds);
+
+            scanner.nextLine();
+            System.out.print("Play again? (yes/no): ");
+            playAgain = scanner.nextLine(); //User decide to play or no
+        }
+
+        System.out.println("Bye " + name);
+        scanner.close();
     }
 }
