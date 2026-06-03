@@ -85,7 +85,7 @@ public class  MontyJava {
        4 5 6 7 8 9
        */
 
-        System.out.println("=== 4.c generate random number from 4 to 9 ===");
+        /*System.out.println("=== 4.c generate random number from 4 to 9 ===");
         int myRand = rand.nextInt(6) + 4;
         System.out.println("Random num: " + myRand);
 
@@ -93,7 +93,7 @@ public class  MontyJava {
         for (int i = 1; i <= myRand; i++)
         {
             System.out.println(i);
-        }
+        }*/
 
         /*
         System.out.println("=== 4.d gen random num (3-6 print 1->n then n->1 ===");
@@ -107,8 +107,7 @@ public class  MontyJava {
         // Reverse Loop
         for (int i = myRand; i >= 1; i--) {
                 System.out.println(i);
-        }
-        */
+        }*/
 
         /*
         System.out.println("===4.e No duplicate ===");
@@ -125,14 +124,162 @@ public class  MontyJava {
         }
         */
 
-        /*
-        System.out.println("===4.f forward & reverse + side by side===");
+
+        /*System.out.println("===4.f forward & reverse + side by side===");
         int myRand = rand.nextInt(7) + 3;
 
         System.out.println("Random num: " + myRand);
 
+        int countBack = myRand;
         for (int i = 1; i <= myRand; i++) {
-            System.out.println(i + " " + (myRand - i + 1)); //
+            System.out.println(i + " " + (myRand - i + 1) + " " + countBack);
+            countBack--;
+        }*/
+
+        /*
+        System.out.println("===5b even and odd 1-40===");
+        for (int i = 1; i <= 10; i++) {
+            int myNum = rand.nextInt(40) + 1; // 1–40
+
+            if (myNum % 2 == 0) {
+                System.out.println(myNum + " (even)");
+            } else {
+                System.out.println(myNum + " (odd)");
+            }
+        }
+        */
+
+        /*System.out.println("===5c 10 numbers divisible by 2 or 3===");
+        for (int i = 1; i <= 10; i++) {
+            int num = rand.nextInt(100) + 1; // 1–100
+
+            if (num % 2 == 0) {
+                System.out.println(num + "(two)");
+            } else if (num % 3 == 0) {
+                System.out.println(num + "(three)");
+            }
+            else {
+                System.out.println(num);
+        }*/
+
+
+        /*
+        System.out.println("===6a 10 numbers divisible by 2 and/or 3===");
+        int size = 6;
+
+        for (int i = 1; i <= size; i++) {
+            int myNum = rand.nextInt(19) + 2; // 2–20
+
+            if (myNum % 2 == 0 && myNum % 3 == 0) {
+                System.out.println(myNum + " correct");
+            } else {
+                System.out.println(myNum);
+            }
+        }
+        */
+
+        /*
+        System.out.println("===6b values of (2 & 3)(2 & 5)(6,10,12)===");
+        int size = 6;
+
+        for (int i = 1; i <= size; i++) {
+            int num = rand.nextInt(20) + 2; // 1–20
+
+            if ((num % 2 == 0 && num % 3 == 0) ||
+                    (num % 2 == 0 && num % 5 == 0)) {
+                System.out.println(num + " correct");
+            } else {
+                System.out.println(num);
+            }
+        }
+        */
+
+        /*
+        System.out.println("==6c 10 numbers Small, Large and Average==");
+        int size = 10;
+        for (int i = 1; i <= size; i++) {
+            int num = rand.nextInt(100); // 0–99
+
+
+            if (num <= 33) { //0-33
+                System.out.println(num + " Small");
+            } else if (num <= 66) { //34-66
+                System.out.println(num + " Average");
+            } else { //67-99
+                System.out.println(num + " Large");
+            }
+            */
+
+            /*
+            switch(num/34){
+                //Using an idea of boxes storing things 33 = 0, 34 = 1 68 = 2
+                case 1 -> {
+                    System.out.println(num + " Small");
+                }
+                case 2 -> {
+                    System.out.println(num + " Average");
+                }
+                case 3 -> {
+                    System.out.println(num + " Large");
+                }
+                }
+              */
+
+
+
+            /*
+            int z =1;
+            while(z <= 10){
+                int myNum = rand.nextInt(100); // 0–99
+
+                if (myNum <= 33) { //0-33
+                    System.out.println(myNum + " Small");
+                } else if (num <= 66) { //34-66
+                    System.out.println(myNum + " Average");
+                } else { //67-99
+                    System.out.println(myNum + " Large");
+                }
+            }
+            i++; //infinite loop
+
+             */
+
+
+        /*
+        System.out.println("==7b 1-9==");
+        int size = rand.nextInt(6) + 2;
+
+        for (int i = 1; i <= size; i++) { //rows
+            for (int j = 1; j <= i; j++) { //column
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+        */
+
+
+        /*
+        System.out.println("==7c num repeated ==");
+        int size = rand.nextInt(6) + 2;
+        System.out.println("The random size num is: " + size);
+
+        for (int i = 1; i <= size; i++) { //rows
+            for (int j = 1; j <= i; j++) { //colums
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+        */
+
+        /*
+        System.out.println("==7d fixed grid pattern ==");
+        int size = rand.nextInt(6) + 2;
+
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
         }
         */
     }
