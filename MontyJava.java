@@ -4,7 +4,7 @@ import java.util.Random;
 public class  MontyJava {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
         /*int evenCount = 0;
@@ -282,5 +282,76 @@ public class  MontyJava {
             System.out.println();
         }
         */
+
+        /*
+        // Prompt user for their name
+        System.out.print("Enter your name: ");
+        //String name = scanner.nextLine();
+        String name = "aaaAbeEEoi";
+        // Display the entered name
+        System.out.println("You entered: " + name);
+
+        // Display each letter on a new line
+        System.out.println("Each letter:");
+        int countA = 0;
+        int countE = 0;
+        int countO = 0;
+        for (int i = 0; i < name.length(); i++) {
+            if (name.charAt(i) == 'a' || name.charAt(i) == 'A' ){
+                countA++;
+            }
+            if (Character.toLowerCase(name.charAt(i)) == 'e'){
+                countE++;
+            }
+            if (name.charAt(i) == 'o'){
+                countO++;
+            }
+        }
+        System.out.println("A: " +countA);
+        System.out.println("E: " +countE);
+        System.out.println("O: " +countO);
+
+        scanner.close();
+        */
+
+        /*
+        int[] myNumbers = new int[10];
+        int size = 5;
+
+        System.out.println("Forward");
+        for (int i = 0; i < size; i++) {
+            myNumbers[i] = rand.nextInt(1000);
+            System.out.println(myNumbers[i]);
+        }
+        System.out.println("Reverse");
+        for (int i = size - 1; i >= 0; i--) {
+            System.out.println(myNumbers[i]);
+        }
+        */
+
+        System.out.println("== 9a. Generate 10, Even & add sumofEven ==");
+        int[] nums = new int[10];
+        int sum = 0;
+
+        // Fill array + print all numbers
+        System.out.print("All num: ");
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = rand.nextInt(10); // 0–9
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println(); //New Line
+
+        // Print even numbers + sum
+        System.out.print("Even: ");
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                System.out.print(nums[i] + " ");
+                sum += nums[i];
+            }
+        }
+        System.out.println();
+        
+        // Print sum
+        System.out.println("Sum: " + sum);
     }
 }
