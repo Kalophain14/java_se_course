@@ -1,18 +1,24 @@
 public class Recursion {
 
-    //reverse recursion
+    /* reverse recursion
+        it prints the output before checking conditions
+        it prints and calls again
+     */
     static void fun(int n){
         if(n>0){
-            System.out.println("You're fun rec is: "+ n);
+            System.out.println("Forward rec num is: "+ n);
             fun(n-1);
         }
     }
 
-    //forward recursion
+    /* forward recursion
+        it checks the condition and prints again
+        it calls condition and print again
+     */
     static void fun2(int n){
         if(n>0){
             fun2(n-1);
-            System.out.println("You're sec rec num is: "+ n);
+            System.out.println("Reverse rec num is: "+ n);
         }
     }
 
