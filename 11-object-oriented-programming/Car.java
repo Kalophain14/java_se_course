@@ -2,8 +2,8 @@ public class Car {
     String color = "White";
     String model = "Hyundai i20";
     int year = 2026;
-    double price = 220021.99;
-    boolean isRunning = false;
+    double price = 2021.99;
+    boolean isRunning = true;
 
     public void run()
     {
