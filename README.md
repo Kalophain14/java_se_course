@@ -24,13 +24,7 @@ During this course, I’ll study:
 • Object-oriented programming fundamentals
 • Exception handling and debugging
 • Working with Java libraries and collections
-📅 My Plan
 
-To stay consistent and make progress:
-• I’ll schedule regular study sessions each week.
-• I’ll practice with code challenges after each lesson.
-• I’ll revisit and revise topics that are challenging.
-• I’ll try building small projects to reinforce skills.
 
 (Topics based on typical Java course structure)Course: Learn JAVA Programming – Beginner to Master
 URL: https://www.udemy.com/share/103pFG3@9pcRtuYBeAOk6qh-kTyZiYBoOgX6SplQDAVvFVmTdnDEjtM3Ac9tiooa15OlaUTyQQ==/
