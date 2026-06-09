@@ -1,4 +1,4 @@
-# Java, Linux/Unix & SQL Learning Journey
+# Java Ultimate Course
 **Beginner to Advanced**
 
 ## 🎯 Course Overview
