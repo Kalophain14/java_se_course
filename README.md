@@ -26,6 +26,14 @@ By the end of this learning path, I aim to:
 - Write and execute shell scripts for automation
 - Understand processes, environment variables, and system administration basics
 
+**Git & GitHub** ✅ *Completed*
+- Master Git fundamentals: init, add, commit, push, pull
+- Understand branching strategies and merging workflows
+- Create custom Git aliases and shortcuts for productivity
+- Collaborate effectively using GitHub
+- Write meaningful commit messages and maintain clean history
+- Manage GitHub profiles and repositories professionally
+
 **SQL & Databases** 🔄 *In Progress*
 - Master relational database design and normalization
 - Write efficient SQL queries (SELECT, INSERT, UPDATE, DELETE)
@@ -54,6 +62,16 @@ By the end of this learning path, I aim to:
 - Process management
 - Environment configuration and dotfiles
 - System utilities and tools
+
+### Git & GitHub Fundamentals
+- Git basics: initialization, staging, committing, pushing
+- Branch creation and management
+- Merging strategies and conflict resolution
+- Custom Git aliases and shortcuts for productivity (gtree, ghb, etc.)
+- Remote repository management
+- GitHub collaboration workflows
+- Writing conventional commit messages
+- Repository organization and best practices
 
 ### SQL & Databases
 - Relational database concepts and design
@@ -90,6 +108,7 @@ By the end of this learning path, I aim to:
 dsa_course/
 ├── java/              # Java programming exercises and projects
 ├── linux/             # Linux/Unix learning materials (Completed)
+├── git/               # Git & GitHub learning and shortcuts (Completed)
 ├── sql/               # SQL and database learning materials (In Progress)
 └── README.md
 ```
@@ -99,10 +118,11 @@ dsa_course/
 ## 🚀 Next Steps
 
 1. ✅ Complete Linux/Unix fundamentals
-2. 🔄 Continue SQL coursework and advanced query techniques
-3. ⏳ Integrate Java + SQL: Build JDBC applications
-4. ⏳ Advanced Java topics: Streams, Concurrency, Design Patterns
-5. ⏳ Full-stack projects combining all three domains
+2. ✅ Master Git & GitHub workflows and create custom shortcuts
+3. 🔄 Continue SQL coursework and advanced query techniques
+4. ⏳ Integrate Java + SQL: Build JDBC applications
+5. ⏳ Advanced Java topics: Streams, Concurrency, Design Patterns
+6. ⏳ Full-stack projects combining all learning domains
 
 ---
 
