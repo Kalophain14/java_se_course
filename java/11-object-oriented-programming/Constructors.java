@@ -7,9 +7,9 @@ public class Constructors {
                           We use the THIS keyword to access the reference
          */
         
-        Student student1 = new Student("David", 30, 78.9);
+        Student student1 = new Student("David", 22, 78.9);
         Student student2 = new Student("Khensani", 14, 98.9);
-        Student student3 = new Student("Lethabo", 33, 88.4);
+        Student student3 = new Student("Lethabo", 22, 35.4);
 
         /*
         System.out.println(student1.name);
