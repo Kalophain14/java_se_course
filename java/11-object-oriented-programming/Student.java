@@ -4,7 +4,6 @@ public class Student {
     double grade;
     boolean isEnrolled;
 
-    //Creating a constructor
     Student(String name, int age, double grade){
         this.name = name;
         this.age = age;
@@ -12,9 +11,7 @@ public class Student {
         this.isEnrolled = true;
     }
 
-    //Method to use
     void study(){
         System.out.println("Are studying? " + this.name);
-
     }
 }

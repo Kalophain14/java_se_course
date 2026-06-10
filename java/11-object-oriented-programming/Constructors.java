@@ -17,8 +17,6 @@ public class Constructors {
         System.out.println(student1.grade);
         System.out.println(student1.isEnrolled);
 
-
-        System.out.println(student2.name);
         System.out.println(student2.age);
         System.out.println(student2.grade);
         System.out.println(student2.isEnrolled);
