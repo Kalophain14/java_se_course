@@ -27,9 +27,16 @@ public class Constructors {
         System.out.println(student3.isEnrolled);
         */
 
-        // Mix it with a method to call
+        /* Mix it with a method to call
         student1.study();
         student2.study();
         student3.study();
+
+         */
+
+        // Create instances and the constructor does the rest
+        Student greeting1 = new Student ("🎉 Happy New Year! 🎉", 2025);
+        Student greeting2 = new Student ("🎊 Happy New Year! 🎊", 2026);
+        Student greeting3 = new Student ("✨ Happy New Year! ✨", 2027);
     }
 }
