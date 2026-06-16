@@ -28,7 +28,7 @@ public class ClassVsObject {
 
     class Test {
         public static void main(String[] args) {
-           Television Tv = new Television();
+           Television Tv = new Television(); //creating an object
 
            Tv.changeChannel(3);
         }
