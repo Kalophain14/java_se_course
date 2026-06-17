@@ -22,14 +22,15 @@ public class WritingAClassForCircle {
        obj.radius = 7;
        obj2.radius = 14;
 
-        System.out.println("Area is: " + obj.area());
-        System.out.println("Perimeter: " + obj.perimeter());
-        System.out.println("circumference: " + obj.circumference());
+        System.out.printf("Area is: %.2f%n", obj.area());
+        System.out.printf("Circumference: %.2f%n", obj.circumference());
+        System.out.printf("Perimeter: %.2f%n", obj.perimeter());
+
 
         System.out.println("==new object==");
 
-        System.out.println("Area2 is: " + obj2.area());
-        System.out.println("Perimeter2: " + obj2.perimeter());
-        System.out.println("circumference2: " + obj2.circumference());
+        System.out.printf("Area2 is: %.2f%n", obj2.area());
+        System.out.printf("Circumference2: %.2f%n", obj2.circumference());
+        System.out.printf("Perimeter: %.2f%n", obj.perimeter());
     }
 }
