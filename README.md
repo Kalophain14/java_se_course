@@ -13,7 +13,7 @@ Java is widely used for mobile apps, desktop software, games, web apps, and larg
 
 By the end of this learning path, I aim to:
 
-**Java Development**
+**Java Development** 🔄 *In Progress*
 - Understand Java syntax deeply and write professional-quality Java programs
 - Master core programming concepts: variables, loops, control flow, and data structures
 - Build expertise in object-oriented programming: classes, objects, inheritance, polymorphism
