@@ -55,6 +55,16 @@ By the end of this learning path, I aim to:
 - Exception handling and debugging
 - Working with Java libraries and APIs
 
+  ### SQL & Databases
+- Relational database concepts and design
+- CREATE, ALTER, and DROP statements
+- SELECT queries and filtering
+- JOINs and complex queries
+- Aggregate functions and GROUP BY
+- Subqueries and views
+- Indexes and performance optimization
+- Integration with Java applications
+
 ### Linux/Unix Fundamentals
 - Command-line navigation and file management
 - User permissions and file systems
@@ -72,16 +82,6 @@ By the end of this learning path, I aim to:
 - GitHub collaboration workflows
 - Writing conventional commit messages
 - Repository organization and best practices
-
-### SQL & Databases
-- Relational database concepts and design
-- CREATE, ALTER, and DROP statements
-- SELECT queries and filtering
-- JOINs and complex queries
-- Aggregate functions and GROUP BY
-- Subqueries and views
-- Indexes and performance optimization
-- Integration with Java applications
 
 ---
 
