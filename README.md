@@ -13,13 +13,6 @@ Java is widely used for mobile apps, desktop software, games, web apps, and larg
 
 By the end of this learning path, I aim to:
 
-**Java Development** 🔄 *In Progress*
-- Understand Java syntax deeply and write professional-quality Java programs
-- Master core programming concepts: variables, loops, control flow, and data structures
-- Build expertise in object-oriented programming: classes, objects, inheritance, polymorphism
-- Gain confidence through hands-on coding exercises and real-world projects
-- Learn exception handling, debugging, and working with Java libraries
-
 **Linux/Unix Systems** ✅ *Completed*
 - Understand Linux/Unix fundamentals and command-line operations
 - Navigate the filesystem and manage files and permissions
@@ -33,6 +26,13 @@ By the end of this learning path, I aim to:
 - Collaborate effectively using GitHub
 - Write meaningful commit messages and maintain clean history
 - Manage GitHub profiles and repositories professionally
+
+**Java Development** 🔄 *In Progress*
+- Understand Java syntax deeply and write professional-quality Java programs
+- Master core programming concepts: variables, loops, control flow, and data structures
+- Build expertise in object-oriented programming: classes, objects, inheritance, polymorphism
+- Gain confidence through hands-on coding exercises and real-world projects
+- Learn exception handling, debugging, and working with Java libraries
 
 **SQL & Databases** 🔄 *In Progress*
 - Master relational database design and normalization
