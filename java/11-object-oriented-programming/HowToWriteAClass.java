@@ -18,7 +18,7 @@ public class HowToWriteAClass {
             //Properties of the class
             public long accountNumber;
             public double accountBalance;
-            public string name;
+            public String name;
 
             //behaviors as methods
             public void deposit(double amount) {

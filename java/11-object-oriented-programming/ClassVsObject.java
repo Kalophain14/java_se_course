@@ -12,7 +12,7 @@ public class ClassVsObject {
     - Therefore you can create many objects from a single class
      */
 
-    class Television {
+    public static class Television {
        //Properties
         private int channel;
         private int volume;
@@ -25,12 +25,9 @@ public class ClassVsObject {
             this.volume = volume;
         }
     }
+    public static void main(String[] args) {
+        Television Tv = new Television(); //creating an object
 
-    class Test {
-        public static void main(String[] args) {
-           Television Tv = new Television(); //creating an object
-
-           Tv.changeChannel(3);
+        System.out.println(Tv.channel);
         }
-    }
 }
