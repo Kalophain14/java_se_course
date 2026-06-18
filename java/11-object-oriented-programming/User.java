@@ -1,10 +1,11 @@
 public class User {
 
-    //Constructor
+    //Properties
     String username;
     String email;
     int age;
 
+    //Methods
     User(String username){
         this.username = username;
         this.email = "Not provided";
