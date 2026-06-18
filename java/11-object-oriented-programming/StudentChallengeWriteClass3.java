@@ -6,17 +6,21 @@ public class StudentChallengeWriteClass3 {
     double radius;
     double height;
 
-    public double lidArea(){
+    public double lidArea() {
         return Math.PI * radius * radius;
     }
-    public double circumference(){
-        return 2 * Math.PI*radius;
+
+    public double circumference() {
+        return 2 * Math.PI * radius;
     }
-    public double totalSurfaceArea(){
+
+    public double totalSurfaceArea() {
+        // Area of top and bottom lids + Area of the side (circumference * height)
         return 2 * lidArea() + circumference() * height;
     }
-    public double volume(){
-        return lidArea()*height;
+
+    public double volume() {
+        return lidArea() * height;
     }
 
     public static void main(String[] args) {
