@@ -2,14 +2,18 @@ public class WritingAClassForCircle {
 
     double radius;
 
-    //Methods
+    //Methods that
+    // return dont take parameters
     public double area(){
+
         return Math.PI * radius * radius;
     }
     public double perimeter(){
+
         return 2 * Math.PI * radius;
     }
     public double circumference(){
+
         return 2 * radius * Math.PI;
     }
 
