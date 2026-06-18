@@ -5,11 +5,11 @@ public class StudentChallengeWriteClass2 {
     double width;
 
     //Methods
-    public double area(){
+    double area(){
         return length * width;
     }
 
-    public double perimeter(){
+    double perimeter(){
         return  2 * (length + width);
     }
 
