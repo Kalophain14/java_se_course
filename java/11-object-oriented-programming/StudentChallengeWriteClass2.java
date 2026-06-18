@@ -25,18 +25,18 @@ public class StudentChallengeWriteClass2 {
         StudentChallengeWriteClass2 obj = new StudentChallengeWriteClass2();
         StudentChallengeWriteClass2 obj2 = new StudentChallengeWriteClass2();
 
-        obj.length = 10.2;
-        obj.width = 12.3;
+        obj.length = 10.5;
+        obj.width = 10.5;
 
-        obj2.length = 4.2;
-        obj2.width = 10.2;
+        obj2.length = 10.5;
+        obj2.width = 5.5;
 
         System.out.println("The area of a rectangle: " + obj.area());
         System.out.println("The area of a rectangle: " + obj.perimeter());
-        System.out.println("Lenghth "+ obj.isSquare());
+        System.out.println("is it a sqaure?: "+ obj.isSquare());
 
         System.out.println("The area of a rectangle: " + obj2.area());
         System.out.println("The area of a rectangle: " + obj2.perimeter());
-        System.out.println("Lenghth "+ obj2.isSquare());
+        System.out.println("is it a sqaure?: "+ obj2.isSquare());
     }
 }
