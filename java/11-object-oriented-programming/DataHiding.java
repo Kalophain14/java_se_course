@@ -52,10 +52,12 @@ class DataHiding {
         DataHiding obj = new DataHiding();
 
         //Setting Properties
-        obj.setLength(10);
-        obj.setWidth(5);
+        obj.setLength(5);
+        obj.setWidth(7);
 
         System.out.println(obj.area());
         System.out.println(obj.perimeter());
+        System.out.println("Length: " + obj.getLength());
+        System.out.println("Width: " + obj.getWidth());;
     }
 }
