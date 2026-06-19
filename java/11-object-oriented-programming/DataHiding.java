@@ -18,20 +18,20 @@ class DataHiding {
     = set(WRITE)
      */
 
-    //Length
+    //getters
     int getLength(){
         return length;
     }
+    int getWidth(){
+        return width;
+    }
+
+    //setters
     void setLength(int l){
         if(l > 0)
             length = l;
         else
             length = 0;
-    }
-
-    //Width
-    int getWidth(){
-        return width;
     }
     void setWidth(int w){
         if(w > 0)
