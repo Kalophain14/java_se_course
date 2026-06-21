@@ -15,6 +15,8 @@
 -- Integers as they are
 -- Operands always follow the precedence (BODMAS)
 
+USE sql_store;
+
 SELECT 
 	last_name, 
 	first_name, 
@@ -120,3 +122,12 @@ SELECT * FROM customers;
 -- State range query (BETWEEN syntax)
 SELECT * FROM customers
 WHERE state BETWEEN 'CA' AND 'LA';
+
+SELECT * 
+FROM customers
+-- WHERE last_name LIKE '%field'
+WHERE last_name REGEXP '^field|mac|rose';
+
+
+
+
