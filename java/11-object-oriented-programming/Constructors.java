@@ -1,42 +1,40 @@
 public class Constructors {
 
+    String title;
+    String director;
+    int releaseYear;
+
+    // Constructor: name must match the class name, no return type
+    Constructors(String title, String director, int releaseYear) {
+        this.title = title;
+        this.director = director;
+        this.releaseYear = releaseYear;
+    }
+
+    // Instance method (not static) since it uses this.title, this.director, etc.
+    void printSummary() {
+        System.out.println("This movie " + title + " was directed by " + director + " released in " + releaseYear);
+    }
+
     public static void main(String[] args) {
         /* Constructors = A special method to initialize objects
                           You can pass arguments to a constructor
                           and set up initial values
                           We use the THIS keyword to access the reference
          */
-        
+
         Student student1 = new Student("David", 22, 78.9);
         Student student2 = new Student("Khensani", 14, 98.9);
         Student student3 = new Student("Lethabo", 22, 35.4);
 
-        /*
-        System.out.println(student1.name);
-        System.out.println(student1.age);
-        System.out.println(student1.grade);
-        System.out.println(student1.isEnrolled);
+        Student greeting1 = new Student("🎉 Happy New Year! 🎉", 2025);
+        Student greeting2 = new Student("🎊 Happy New Year! 🎊", 2026);
+        Student greeting3 = new Student("✨ Happy New Year! ✨", 2027);
 
-        System.out.println(student2.age);
-        System.out.println(student2.grade);
-        System.out.println(student2.isEnrolled);
+        Constructors cinema1 = new Constructors("007", "James Bond", 2026);
+        Constructors cinema2 = new Constructors("Superman", "Zack Snyder", 2013);
 
-        System.out.println(student3.name);
-        System.out.println(student3.age);
-        System.out.println(student3.grade);
-        System.out.println(student3.isEnrolled);
-        */
-
-        /* Mix it with a method to call
-        student1.study();
-        student2.study();
-        student3.study();
-
-         */
-
-        // Create instances and the constructor does the rest
-        Student greeting1 = new Student ("🎉 Happy New Year! 🎉", 2025);
-        Student greeting2 = new Student ("🎊 Happy New Year! 🎊", 2026);
-        Student greeting3 = new Student ("✨ Happy New Year! ✨", 2027);
+        cinema1.printSummary();
+        cinema2.printSummary();
     }
 }
