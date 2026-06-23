@@ -8,15 +8,16 @@ Data Hiding
 
 class DataHiding {
 
+    /*
+  Accessing Private Data using
+  = get(READ)
+  = set(WRITE)
+   */
+
+
     //Data Hidden Properties
     private int length;
     private int width;
-
-    /*
-    Accessing Private Data using
-    = get(READ)
-    = set(WRITE)
-     */
 
     //getters
     int getLength(){
@@ -26,7 +27,7 @@ class DataHiding {
         return width;
     }
 
-    //setters
+    //setters conditions for data to be set
     void setLength(int l){
         if(l > 0)
             length = l;
