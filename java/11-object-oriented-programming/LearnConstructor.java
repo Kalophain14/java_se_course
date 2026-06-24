@@ -1,52 +1,58 @@
 public class LearnConstructor {
 
-    private int length;
-    private int width;
+    // Properties (Encapsulated fields)
+    private int radius;
+    private int height;
 
-//    //getters
-//    public int getLength (){
-//        return length;
-//    }
-//    public int getWidth (){
-//        return width;
-//    }
-//
-//    //setters
-//    public void setLength(int l) {
-//        if (l > 0)
-//            length = l;
-//        else
-//            return = 0;
-//    }
-//    public void setWidth(int w){
-//        if (w > 0)
-//            width = w;
-//        else
-//            return = 0;
-//    }
-
-    //No input taken
+    // Default No-Argument Constructor
     public LearnConstructor() {
-        length = 1;
-        width = 1;
+        radius = 1;
+        height = 1;
     }
 
-    //TakeInput Constructor
-    public LearnConstructor(int l, int w){
-        this.length = l;
-        this.width = w;
+    // Parameterized Constructor
+    public LearnConstructor(int r, int h){
+        this.radius = r;
+        this.height = h;
     }
 
-    //Method
-    public int area(){
-        return length * width;
+    // Getters
+    public int getRadius (){
+        return radius;
+    }
+
+    public int getHeight (){
+        return height;
+    }
+
+    // Setters
+    public void setRadius(int r) {
+        if (r > 0) {
+            radius = r;
+        } else {
+            radius = 0;
+        }
+    }
+
+    public void setHeight(int h){
+        if (h > 0) {
+            height = h;
+        } else {
+            height = 0;
+        }
+    }
+
+    // Method for cylinder
+    public int cylinder(){
+        return radius * height;
     }
 
     public static void main(String[] args) {
-
+        // Instantiate
         LearnConstructor obj = new LearnConstructor();
-        LearnConstructor obj2 = new LearnConstructor(10,5);
-        System.out.println(obj.area());
-        System.out.println(obj2.area());
+        LearnConstructor obj2 = new LearnConstructor(10, 5);
+
+        System.out.println("Output for obj: " + obj.cylinder());
+        System.out.println("Output for obj2: " + obj2.cylinder());
     }
 }
