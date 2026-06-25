@@ -10,19 +10,18 @@ public class PractisingConstructors {
     public String getItemNo() {
         return itemNo;
     }
-    public String name() {
+    public String getName() {
         return name;
     }
-    public double price() {
+    public double getPrice() {
         return price;
     }
-    public double qty() {
+    public double getQty() {
         return qty;
     }
 
     /*
     Setters
-
     Since the itemNo & name of the products
     dont change no need to set them
     */
@@ -45,16 +44,16 @@ public class PractisingConstructors {
     public PractisingConstructors(String itemNo, String name, double price, double qty) {
         this.itemNo = itemNo;
         this.name = name;
-        this.price = price;
-        this.qty = qty;
+        setPrice(price);
+        setQty(qty);
     }
 
     public static void main(String[] args) {
 
         PractisingConstructors obj = new PractisingConstructors("A124", "TV", 1200.92, 2.0);
-        System.out.println("Name : " + obj.name());
-        System.out.println("Price : " + obj.price());
-        System.out.println("Quantity : " + obj.qty());
+        System.out.println("Name : " + obj.getName());
+        System.out.println("Price : " + obj.getPrice());
+        System.out.println("Quantity : " + obj.getQty());
 
     }
 }
