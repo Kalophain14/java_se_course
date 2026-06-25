@@ -15,8 +15,8 @@ public class ArrayOfObjectsChallenge {
     public int getMarksObtained() { return marksObtained; }
 
     // Setters
-    public void setSubID(String sbID) {
-        this.subID = sbID;
+    public void setSubID(String subID) {
+        this.subID = subID;
     }
 
     public void setSubName(String subName) {
@@ -40,50 +40,49 @@ public class ArrayOfObjectsChallenge {
             this.marksObtained = marksObtained;
     }
 
-//    //Method
-//    public isQualified(){
-//        return marksObtained >= maxMarks/10*4;
-//    }
-
     // Default Constructor
     public ArrayOfObjectsChallenge() {
     }
 
-    // Parameterized Constructor
-    public ArrayOfObjectsChallenge(String subID,
-                                   String subName,
-                                   int maxMarks,
-                                   int marksObtained ) {
-        setSubID(subID);
-        setSubName(subName);
-        setMaxMarks(maxMarks);
-        setMarksObtained(marksObtained);
-    }
-
     public static void main(String[] args) {
-        ArrayOfObjectsChallenge obj = new ArrayOfObjectsChallenge();
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter Sub ID: ");
-        String inputSubID = input.nextLine();
-        obj.setSubID(inputSubID);
 
-        System.out.print("Enter Sub Name: ");
-        obj.setSubName(input.nextLine());
+        ArrayOfObjectsChallenge[] subs = new ArrayOfObjectsChallenge[3];
 
-        System.out.print("Enter Max Marks: ");
-        obj.setMaxMarks(input.nextInt());
+        //loop to gather details of the user
+        //Creates 3 students chart and retrieve data as user enter it
+        for (int i = 0; i < subs.length; i++) {
+            System.out.println("\n--- Entering Details for Subject " + (i + 1) + " ---");
 
-        System.out.print("Enter Marks Obtained: ");
-        obj.setMarksObtained(input.nextInt());
+            subs[i] = new ArrayOfObjectsChallenge();
 
-        System.out.println("\n--- Student Details ---");
-        System.out.println("Student ID: " + obj.getSubID());
-        System.out.println("Student Name: " + obj.getSubName());
-        System.out.println("Student Max Marks: " + obj.getMaxMarks());
-        System.out.println("Student Marks Obtained: " + obj.getMarksObtained());
+            System.out.print("Enter Sub ID: ");
+            String inputSubID = input.nextLine();
+            subs[i].setSubID(inputSubID);
 
+            System.out.print("Enter Sub Name: ");
+            subs[i].setSubName(input.nextLine());
 
+            System.out.print("Enter Max Marks: ");
+            subs[i].setMaxMarks(input.nextInt());
+
+            System.out.print("Enter Marks Obtained: ");
+            subs[i].setMarksObtained(input.nextInt());
+
+            input.nextLine();
+        }
+
+        //looping through the details and accessing it
+        System.out.println("\n==Student details==");
+
+        for (int i = 0; i < subs.length; i++) {
+            System.out.println("\nSubject " + (i + 1) + ":");
+            System.out.println("Student ID: " + subs[i].getSubID());
+            System.out.println("Student Name: " + subs[i].getSubName());
+            System.out.println("Student Max Marks: " + subs[i].getMaxMarks());
+            System.out.println("Student Marks Obtained: " + subs[i].getMarksObtained());
+        }
         input.close();
     }
 }
