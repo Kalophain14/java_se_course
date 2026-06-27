@@ -23,7 +23,7 @@ public class ArrayOfObjectsChallenge {
         if (subName == null)
             this.subName = "";
         else
-            this.subName = subName.toUpperCase();
+            this.subName = subName;
     }
 
     public void setMaxMarks(int maxMarks) {
