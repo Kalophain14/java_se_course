@@ -63,10 +63,10 @@ public class WhatIsInheritance {
                 System.out.println("Radius: " + C1.getRadius());
                 System.out.printf("Area: %.2f\n", C1.area());
                 System.out.printf("Perimeter (Circumference): %.2f\n", C1.perimeter());
-                System.out.println(); // Prints a blank line for spacing
+                System.out.println();
 
                 System.out.println("--- Cylinder 2 Properties ---");
-                // Inherits getRadius() and area() from Circle automatically
+                // Inherits getRadius() and area() from Circle
                 System.out.println("Base Radius: " + C2.getRadius());
                 System.out.printf("Base Area: %.2f\n", C2.area());
                 System.out.printf("Volume: %.2f\n", C2.volume());
