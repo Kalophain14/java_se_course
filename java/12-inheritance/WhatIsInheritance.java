@@ -59,7 +59,7 @@ public class WhatIsInheritance {
                 = Properties (Variables etc)
                 = Methods/Functions
          */
-                // object creation from the superClass and Inheritence
+                // object creation from the superClass and Inheritance
                 Circle C1 = new Circle();
                 Cylinder C2 = new Cylinder(5.0, 12.0);
 
