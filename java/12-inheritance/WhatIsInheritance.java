@@ -1,9 +1,12 @@
 public class WhatIsInheritance {
 
+    //Super aka Parent Class
     public static class Circle {
+
+        // properties
         private double radius;
 
-        // Constructors
+        // constructors
         public Circle() {
             this.radius = 10.0;
         }
@@ -11,12 +14,12 @@ public class WhatIsInheritance {
             this.radius = radius;
         }
 
-        // Getter Radius
+        // getter Radius
         public double getRadius() {
             return radius;
         }
 
-        //Methods
+        // methods
         public double area() {
             return Math.PI * radius * radius;
         }
@@ -25,26 +28,27 @@ public class WhatIsInheritance {
         }
     }
 
-    //Inheritance extension
+    //Inheritance aka Child Class Extends from Circle
     public static class Cylinder extends Circle {
+
+        // properties
         private double height; //adding new feature
 
-        // Constructors
+        // constructor calling superClass
         public Cylinder() {
             super(); // Calls the Circle() constructor (sets radius to 10)
             this.height = 5.0;
         }
         public Cylinder(double radius, double height) {
-            super(radius); // Sets
+            super(radius); // Sets the radius in the superClass
             this.height = height;
         }
 
-        // Volume method
+        // volume calculates method
         public double volume() {
             return area() * height;
         }
     }
-
 
     public static void main(String[] args) {
         /* What is Inheritance
@@ -55,7 +59,7 @@ public class WhatIsInheritance {
                 = Properties (Variables etc)
                 = Methods/Functions
          */
-                // Creating the objects using your default constructors
+                // object creation from the superClass and Inheritence
                 Circle C1 = new Circle();
                 Cylinder C2 = new Cylinder(5.0, 12.0);
 
