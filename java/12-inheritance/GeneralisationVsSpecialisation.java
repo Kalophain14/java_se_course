@@ -76,7 +76,7 @@ public class GeneralisationVsSpecialisation {
 // In Object-Oriented Programming (OOP):
 // - Generalization = creating a SUPERCLASS (abstract parent)
 // - Specialization = creating SUBCLASSES (concrete children)
-// - Relationship = INHERITANC
+// - Relationship = INHERITANCE
 // - ABSTRACT CLASSES & INTERFACE = can also achieve the same thing
 
 
