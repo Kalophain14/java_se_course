@@ -63,13 +63,13 @@ public class WhatIsInheritance {
                 Circle C1 = new Circle();
                 Cylinder C2 = new Cylinder(5.0, 12.0);
 
-                System.out.println("--- Circle 1 Properties ---");
+                System.out.println("=== Circle 1 Properties ===");
                 System.out.println("Radius: " + C1.getRadius());
                 System.out.printf("Area: %.2f\n", C1.area());
                 System.out.printf("Perimeter (Circumference): %.2f\n", C1.perimeter());
                 System.out.println();
 
-                System.out.println("--- Cylinder 2 Properties ---");
+                System.out.println("=== Cylinder 2 Properties ===");
                 // Inherits getRadius() and area() from Circle
                 System.out.println("Base Radius: " + C2.getRadius());
                 System.out.printf("Base Area: %.2f\n", C2.area());
