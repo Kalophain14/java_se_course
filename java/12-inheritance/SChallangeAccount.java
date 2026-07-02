@@ -1,7 +1,7 @@
 public class SChallangeAccount {
 
     // Super Class
-    public class Accounts {
+    public static class Accounts {
 
         // Properties
         private long accNo;
@@ -166,10 +166,52 @@ public class SChallangeAccount {
 
 
     public static void main(String[] args) {
+        // 1. SAVINGS
+        System.out.println("--- Savings Account Operations ---");
 
-        SChallangeAccount sch = new SChallangeAccount();
-        SChallangeAccount sch2 = new SChallangeAccount();
+        // Saving obj creation
+        SavingsAccount savings = new SavingsAccount(
+                10012345L, "John Doe", "123 Oak Street, Cape Town", "0712345678", "1995-04-12", 5000.0, 0.05
+        );
+
+        // validation rules
+        if (savings.isAccountValid()) {
+            System.out.println("Account verification passed for: " + savings.getName());
+        }
+
+        // Deposit
+        savings.deposit(2500.0);
+
+        // Calculate + Interest == balance
+        savings.applyInterest(); // 7500 * 0.05 = 375 interest added. Balance becomes 7875.0
+
+        System.out.println("Final Savings Balance: R" + savings.getBalance());
+        System.out.println("\n----------------------------------\n");
 
 
+        // 2. LOAN ACCOUNT DEMO
+        System.out.println("--- Loan Account Operations ---");
+
+        LoanAccount loan = new LoanAccount(
+                20098765L, "Jane Smith", "456 Maple Avenue, Johannesburg", "0823456789", "1988-11-23", 50000.0, 0.12
+        );
+
+        // Verify profile validation for the loan account holder
+        if (loan.isAccountValid()) {
+            System.out.println("Account verification passed for: " + loan.getName());
+        }
+
+        // Loan balance
+        System.out.println("Initial Loan Owed: R" + loan.getLoanAmount());
+
+        // Calculate interest add to balance
+        loan.applyLoanInterest(); // 50000 * 0.12 = 6000 interest added. Total owed becomes 56000.0
+
+        // repayment manually
+        loan.setLoanAmount(41000.0);
+        System.out.println("Loan amount manually updated after payment to: R" + loan.getLoanAmount());
+
+        double potentialNewRate = loan.generateRandomRate();
+        System.out.printf("Market check: Random potential interest rate available: %.2f%%\n", (potentialNewRate * 100));
     }
 }
