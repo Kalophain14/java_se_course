@@ -78,31 +78,46 @@ public class SChallangeAccount {
     }
 
 
-  //Savings Account Inheritance From SuperClass
+    // SavingsAccount Inherits from Accounts Superclass
     public static class SavingsAccount extends Accounts {
-        //Properties
-        private int deposit;
-        // Getter
-        public int getDeposit(){ return deposit; }
 
-        // Setters
-        public int setDeposit (int deposit){ this.deposit = deposit; }
+        private double interestRate;
 
         // Default Constructor
-      public void setDeposit(int deposit){
-            this.deposit = deposit;
-      }
+        public SavingsAccount() {
+            super();
+            this.interestRate = 0.05; //
+        }
 
-        // Parallelized Constructors
-      public void setDeposit(int deposit, int amount){
-            this.deposit = deposit + amount;
-      }
+        // Parameterized Constructor
+        public SavingsAccount(long accNo,
+                              String name,
+                              String address,
+                              String phoneNo,
+                              String dob,
+                              double initialBalance,
+                              double interestRate) {
+            super(accNo, name, address, phoneNo, dob, initialBalance); //Accessing Superclass
+            this.interestRate = interestRate;
+        }
 
-      //Methods
-      public SavingsAccount(int accNo, String name, String address, String phoneNo, String dob) {
-            super(accNo, name, address, phoneNo, dob, 0.0);
-      }
+        // Getter and Setter for Savings property
+        public double getInterestRate() {
+            return interestRate;
+        }
+        public void setInterestRate(double interestRate) {
+            this.interestRate = interestRate;
+        }
+
+        // Method for calculating the interest rate
+        public void applyInterest() {
+
+            double interestEarned = getBalance() * interestRate;
+            deposit(interestEarned);
+            System.out.println("Interest applied: " + interestEarned);
+        }
     }
+
 
     //Loan Account Inheritance From SuperClass
     public static class LoanAccount extends Accounts {
@@ -130,6 +145,12 @@ public class SChallangeAccount {
         public LoanAccount(int loanAmmount, int interest) {
             this.loanAmmount = loanAmmount;
             this.interest = interest;
+        }
+
+        public interestRate (){
+            this.loanAmmount = 0;
+            this.interest = 0;
+
         }
 
         //Methods
