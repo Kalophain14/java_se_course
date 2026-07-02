@@ -46,6 +46,8 @@ public class SChallangeAccount {
         public void setPhoneNo(String phoneNo) { this.phoneNo = phoneNo; }
 
         // Methods
+
+        //deposit Method
         public void deposit(double amount) {
             if (amount > 0) {
                 this.balance += amount; // stores the balance
@@ -76,26 +78,67 @@ public class SChallangeAccount {
     }
 
 
-    //Savings Account Inheritance From SuperClass
-    public static class SavingsAccount () {
+  //Savings Account Inheritance From SuperClass
+    public static class SavingsAccount extends Accounts {
         //Properties
-        private int interest;
         private int deposit;
+        // Getter
+        public int getDeposit(){ return deposit; }
 
-        //Inheriting from SuperClass
-        //Constructors
-        //Methods
+        // Setters
+        public int setDeposit (int deposit){ this.deposit = deposit; }
+
+        // Default Constructor
+      public void setDeposit(int deposit){
+            this.deposit = deposit;
+      }
+
+        // Parallelized Constructors
+      public void setDeposit(int deposit, int amount){
+            this.deposit = deposit + amount;
+      }
+
+      //Methods
+      public SavingsAccount(int accNo, String name, String address, String phoneNo, String dob) {
+            super(accNo, name, address, phoneNo, dob, 0.0);
+      }
     }
 
     //Loan Account Inheritance From SuperClass
-    public static class LoanAccount() {
-        //Properties
-        private int interest;
+    public static class LoanAccount extends Accounts {
+        // properties
         private int loanAmmount;
+        private int interest;
 
-        //Inheriting from SuperClass
-        //Constructors
+        // Getters
+        public int getInterest(){ return interest; }
+        public int getLoanAmmount(){ return loanAmmount; }
+
+        // Setters
+        public void setInterest(int interest){ this.interest = interest; }
+        public void setLoanAmmount(int loanAmmount){ this.loanAmmount = loanAmmount; }
+
+
+        // Constructors
+        //Default Constructors
+        public LoanAccount(){
+            this.loanAmmount = 0;
+            this.interest = 0;
+        }
+
+        // Parametrized Constructor
+        public LoanAccount(int loanAmmount, int interest) {
+            this.loanAmmount = loanAmmount;
+            this.interest = interest;
+        }
+
         //Methods
+        public int LoanAccount(){
+            return (int)(Math.random()*100)+1;
+        }
+        public int LoanInterest(){
+            return (int)(Math.random()*100)+1;
+        }
     }
 
     public static void main(String[] args) {
