@@ -32,7 +32,7 @@ public class SChallangeAccount {
             this.balance = initialBalance;
         }
 
-        // Getters
+        // Getters (all properties)
         public long getAccNo() { return accNo; }
         public String getName() { return name; }
         public String getAddress() { return address; }
@@ -40,7 +40,7 @@ public class SChallangeAccount {
         public String getDob() { return dob; }
         public double getBalance() { return balance; }
 
-        // Setters (Only for properties that are allowed to change)
+        // Setters (properties that are allowed to change)
         public void setName(String name) { this.name = name; }
         public void setAddress(String address) { this.address = address; }
         public void setPhoneNo(String phoneNo) { this.phoneNo = phoneNo; }
