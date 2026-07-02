@@ -119,50 +119,57 @@ public class SChallangeAccount {
     }
 
 
-    //Loan Account Inheritance From SuperClass
+    // LoanAccount Inherits from Accounts Superclass
     public static class LoanAccount extends Accounts {
-        // properties
-        private int loanAmmount;
-        private int interest;
 
-        // Getters
-        public int getInterest(){ return interest; }
-        public int getLoanAmmount(){ return loanAmmount; }
+        // Properties
+        private double loanAmount;
+        private double interestRate;
 
-        // Setters
-        public void setInterest(int interest){ this.interest = interest; }
-        public void setLoanAmmount(int loanAmmount){ this.loanAmmount = loanAmmount; }
-
-
-        // Constructors
-        //Default Constructors
-        public LoanAccount(){
-            this.loanAmmount = 0;
-            this.interest = 0;
+        // Default Constructor
+        public LoanAccount() {
+            super(); // Initializes the parent class properties
+            this.loanAmount = 0.0;
+            this.interestRate = 0.0;
         }
 
-        // Parametrized Constructor
-        public LoanAccount(int loanAmmount, int interest) {
-            this.loanAmmount = loanAmmount;
-            this.interest = interest;
+        // Parameterized Constructor
+        public LoanAccount(long accNo, String name, String address, String phoneNo, String dob,
+                           double loanAmount, double interestRate) {
+            // Passes the details of parent/superClass constructor
+            super(accNo, name, address, phoneNo, dob, 0.0);
+            this.loanAmount = loanAmount;
+            this.interestRate = interestRate;
         }
 
-        public interestRate (){
-            this.loanAmmount = 0;
-            this.interest = 0;
+        // Getters & Setters
+        public double getLoanAmount() { return loanAmount; }
+        public double getInterestRate() { return interestRate; }
 
+        public void setLoanAmount(double loanAmount) { this.loanAmount = loanAmount; }
+        public void setInterestRate(double interestRate) { this.interestRate = interestRate; }
+
+        // Methods
+
+        // Applies interest to the outstanding loan amount
+        public void applyLoanInterest() {
+            double interestOwed = this.loanAmount * this.interestRate;
+            this.loanAmount += interestOwed;
+            System.out.println("Interest applied. New loan balance: " + this.loanAmount);
         }
 
-        //Methods
-        public int LoanAccount(){
-            return (int)(Math.random()*100)+1;
-        }
-        public int LoanInterest(){
-            return (int)(Math.random()*100)+1;
+        public double generateRandomRate() {
+            // Returns a random interest rate between 5% and 15%
+            return 0.05 + (Math.random() * 0.10);
         }
     }
 
+
     public static void main(String[] args) {
+
+        SChallangeAccount sch = new SChallangeAccount();
+        SChallangeAccount sch2 = new SChallangeAccount();
+
 
     }
 }
