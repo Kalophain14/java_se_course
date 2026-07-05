@@ -126,7 +126,45 @@ WHERE state BETWEEN 'CA' AND 'LA';
 SELECT * 
 FROM customers
 -- WHERE last_name LIKE '%field'
-WHERE last_name REGEXP '^field|mac|rose';
+-- REGEXP (regular expression = search for strings)
+-- $ end with and ^ start of the string
+-- You can always pipe through
+-- [] the words inside the square brackets put letters before the second character
+-- [gim]e == ge or ie or me will be searched and found it can be before or after
+-- '[a-h]e'
+-- OVERVIEW
+-- WHERE last_name REGEXP 'field$|mac|rose'
+-- ^ beginning
+-- $ end
+-- | logical or 
+-- [abcd]
+-- [-] range
+WHERE last_name REGEXP '[a-h]e';
+
+-- Exercises
+-- 01 
+SELECT *
+FROM customers 
+WHERE first_name REGEXP 'elka|ambur';
+-- 02       
+SELECT *
+FROM customers 
+WHERE last_name REGEXP 'EY$|ON$';
+
+-- 03
+SELECT * 
+FROM customers
+WHERE last_name REGEXP '^MY|[SE]';
+
+-- 04
+SELECT *
+FROM customers
+WHERE last_name REGEXP '[B]RU'
+
+
+
+ 
+ 
 
 
 
