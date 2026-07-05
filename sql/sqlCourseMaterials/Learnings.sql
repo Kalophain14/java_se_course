@@ -154,14 +154,33 @@ WHERE last_name REGEXP 'EY$|ON$';
 -- 03
 SELECT * 
 FROM customers
-WHERE last_name REGEXP '^MY|[SE]';
+WHERE last_name REGEXP '^MY|SE';
 
 -- 04
 SELECT *
 FROM customers
-WHERE last_name REGEXP '[B]RU'
+WHERE last_name REGEXP '[B]RU';
 
 
+
+-- ============================================
+-- 05 THE NULL OPERATOR
+-- IS NULL (Where the is no information/record)
+-- IS NOT NULL (Where the is information/record)
+
+SELECT * 
+FROM customers
+WHERE phone IS NOT NULL;
+
+-- Exercise
+SELECT * 
+FROM orders
+WHERE shipped_date IS NULL
+
+
+-- ============================================
+-- 06 THE ORDER BY CLAUSE
+-- 
 
  
  
