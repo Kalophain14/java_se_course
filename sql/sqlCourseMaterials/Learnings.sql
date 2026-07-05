@@ -175,13 +175,23 @@ WHERE phone IS NOT NULL;
 -- Exercise
 SELECT * 
 FROM orders
-WHERE shipped_date IS NULL
+WHERE shipped_date IS NULL;
 
 
 -- ============================================
 -- 06 THE ORDER BY CLAUSE
--- 
+-- Sorting out data we use the ORDER BY
+-- You can sort data by creating an alias as well
 
+SELECT first_name, last_name, 10 AS points
+FROM customers
+ORDER BY order_id;
+
+-- Exercise
+SELECT * 
+FROM sql_store.order_items
+WHERE order_id = 2
+ORDER BY quantity * unit_price DESC
  
  
 
