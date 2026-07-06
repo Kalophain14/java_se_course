@@ -122,7 +122,7 @@ public class ChalAccount {
 
         // Constructor mapping arguments to Super Class
         public LoanAccount(long accNo, String name, String address, String phoneNo, String dob, double loanAmount, double interestRate) {
-            super(accNo, name, address, phoneNo, dob, 0.0);
+            super(accNo, name, address, phoneNo, dob, 0.0); //Calling superclass properties
             this.loanAmount = loanAmount;
             this.interestRate = interestRate;
         }
