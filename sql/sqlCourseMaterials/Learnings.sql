@@ -199,14 +199,15 @@ ORDER BY total_price DESC;
 
 SELECT *
 FROM customers
-LIMIT 6,3
-
+ORDER BY points DESC
+LIMIT 3
 -- Lets say you wanna choose which pages you wanna view
 -- You use an offset and to which records (6, 3)
 -- It will skip the first 6 records and pick 3 records
 -- page 1 - 3
 -- page 4 - 6
 -- page 7 - 9
+ 
  
  
 
