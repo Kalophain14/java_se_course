@@ -200,7 +200,7 @@ ORDER BY total_price DESC;
 SELECT *
 FROM customers
 ORDER BY points DESC
-LIMIT 3
+LIMIT 3;
 -- Lets say you wanna choose which pages you wanna view
 -- You use an offset and to which records (6, 3)
 -- It will skip the first 6 records and pick 3 records
@@ -209,7 +209,18 @@ LIMIT 3
 -- page 7 - 9
  
  
- 
+-- ============================================
+-- 08 Inner Join
+-- It is used to Join two columnns from different tables
+-- Youn use the keyword JOIN and using the ON phrase
+-- The first colummn will be the one you call out first on the select phrase
+-- You need to quantify the column by calling the table name meaning orders.
+-- You can create the aliases on repeated columns eg orders o (alias will be o)
+SELECT order_id, o.customer_id, first_name, last_name
+FROM orders o
+JOIN customers c
+ON o.customer_id = c.customer_id
+
 
 
 
