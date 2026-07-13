@@ -55,7 +55,7 @@ public class ChalAccount {
                 this.balance += amount;
                 System.out.println("Successfully deposited: " + amount);
             } else {
-                System.out.println("Dep mount must be positive.");
+                System.out.println("Deposit amount must be positive.");
             }
         }
 
@@ -90,7 +90,7 @@ public class ChalAccount {
 
             if (getBalance() >= amount) {
                 super.deposit(-amount);
-                System.out.println("withdrew: " + amount);
+                System.out.println("Successfully withdrew: " + amount);
             } else {
                 System.out.println("Ga o na zaka.");
             }
