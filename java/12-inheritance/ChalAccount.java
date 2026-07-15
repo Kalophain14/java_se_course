@@ -59,6 +59,7 @@ public class ChalAccount {
             }
         }
 
+        // Validation
         public boolean isAccountValid() {
             if (this.accNo <= 0) return false;
             if (this.name == null || this.name.trim().isEmpty()) return false;
