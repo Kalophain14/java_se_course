@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ChalAccount {
 
     // Super Class
@@ -37,17 +39,42 @@ public class ChalAccount {
         }
 
         // Getters (all properties)
-        public long getAccNo() { return accNo; }
-        public String getName() { return name; }
-        public String getAddress() { return address; }
-        public String getPhoneNo() { return phoneNo; }
-        public String getDob() { return dob; }
-        public double getBalance() { return balance; }
+        public long getAccNo() {
+            return accNo;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public String getPhoneNo() {
+            return phoneNo;
+        }
+
+        public String getDob() {
+            return dob;
+        }
+
+        public double getBalance() {
+            return balance;
+        }
 
         // Setters (properties that are allowed to change)
-        public void setName(String name) { this.name = name; }
-        public void setAddress(String address) { this.address = address; }
-        public void setPhoneNo(String phoneNo) { this.phoneNo = phoneNo; }
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public void setPhoneNo(String phoneNo) {
+            this.phoneNo = phoneNo;
+        }
 
         // Methods
         public void deposit(double amount) {
@@ -144,31 +171,99 @@ public class ChalAccount {
         }
     }
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        // 1. SAVINGS ACCOUNT TESTING
-        System.out.println("--- Testing Savings Account ---");
+            // 1. SAVINGS ACCOUNT TESTING
+            System.out.println("--- Testing Savings Account ---");
 
-        SavingsAccount savings = new SavingsAccount(
-                10012345L, "John Doe", "123 Oak Street, Cape Town", "0712345678", "1995-04-12", 5000.0, 0.05
-        );
+            Scanner sc = new Scanner(System.in);
 
-        savings.withdraw(1500.0);
-        savings.withdraw(10000.0);
-        savings.createFixedDeposit(2000.0);
-        savings.closeAccount();
+            System.out.println("=== Create New Savings Account ===");
 
-        System.out.println("\n----------------------------------\n");
+            System.out.print("Account number: ");
+            long accountNumber = Long.parseLong(sc.nextLine().trim());
 
-        // 2. LOAN ACCOUNT TESTING
+            System.out.print("Full name: ");
+            String name = sc.nextLine();
+
+            System.out.print("Address: ");
+            String address = sc.nextLine();
+
+            System.out.print("Phone number: ");
+            String phone = sc.nextLine();
+
+            System.out.print("Date of birth (YYYY-MM-DD): ");
+            String dob = sc.nextLine();
+
+            System.out.print("Initial deposit amount: R");
+            double balance = Double.parseDouble(sc.nextLine().trim());
+
+            System.out.print("Interest rate (e.g., 0.05 for 5%): ");
+            double interestRate = Double.parseDouble(sc.nextLine().trim());
+
+            // New object to access the properties
+            ChalAccount.SavingsAccount savings = new ChalAccount.SavingsAccount(
+                    accountNumber,
+                    name,
+                    address,
+                    dob,
+                    phone,
+                    balance,
+                    interestRate);
+
+            // Validation
+
+            boolean running = true;
+            while (running) {
+                System.out.println("\n--- Menu ---");
+                System.out.println("1. Withdraw");
+                System.out.println("2. Create Fixed Deposit");
+                System.out.println("3. Close Account");
+                System.out.println("4. Exit");
+                System.out.print("Choose an option: ");
+                String choice = sc.nextLine().trim();
+
+                // Switch cases on the user input
+                switch (choice) {
+                    case "1":
+                        System.out.print("Amount to withdraw: R");
+                        double withdrawAmount = Double.parseDouble(sc.nextLine().trim());
+                        savings.withdraw(withdrawAmount);
+                        break;
+                    case "2":
+                        System.out.print("Amount for fixed deposit: R");
+                        double depositAmount = Double.parseDouble(sc.nextLine().trim());
+                        savings.createFixedDeposit(depositAmount);
+                        break;
+                    case "3":
+                        savings.closeAccount();
+                        running = false;
+                        break;
+                    case "4":
+                        running = false;
+                        break;
+                    default:
+                        System.out.println("Invalid option, please try again.");
+                }
+            }
+
+            System.out.println("Goodbye!");
+            sc.close();
+        }
+}
+
+
+/* System.out.println("\n----------------------------------\n");
+
+    /* 2. LOAN ACCOUNT TESTING
         System.out.println("--- Testing Loan Account ---");
 
-        LoanAccount loan = new LoanAccount(
-                20098765L, "Jane Smith", "456 Maple Avenue, Johannesburg", "0823456789", "1988-11-23", 40000.0, 0.12
-        );
+    LoanAccount loan = new LoanAccount(
+            20098765L, "Jane Smith", "456 Maple Avenue, Johannesburg", "0823456789", "1988-11-23", 40000.0, 0.12
+    );
 
         loan.topUpLoan(10000.0);
         loan.makeRepayment(15000.0);
         loan.makeRepayment(35000.0);
-    }
-}
+
+}*/
