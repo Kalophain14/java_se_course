@@ -4,18 +4,20 @@ public class ThisVsSuper {
     int breadth;
     int x = 10;
 
-    ThisVsSuper(int l, int b) {
-        length = l;
-        breadth = b;
+    // Constructor
+    ThisVsSuper(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
     }
 
+    // Method
     void display(){
         System.out.println("Length: " + this.length);
         System.out.println("Breadth: " + this.breadth);
     }
 
-    //Super
-    class Circle extends ThisVsSuper {
+    // Using the Super properties
+    static class Circle extends ThisVsSuper {
         int radius;
         int x = 10;
 
@@ -31,11 +33,14 @@ public class ThisVsSuper {
     }
 
     public static void main(String[] args) {
+
         // this vs super
-        
-        ThisVsSuper test = new ThisVsSuper(10, 5);
+        ThisVsSuper test = new ThisVsSuper(10, 30);
         test.display();
 
+        System.out.println();
 
+        Circle test2 = new Circle(30, 20);
+        test2.display();
     }
 }
