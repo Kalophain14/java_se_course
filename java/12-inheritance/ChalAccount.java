@@ -249,21 +249,14 @@ public class ChalAccount {
 
             System.out.println("Goodbye!");
             sc.close();
-        }
+
+            /* System.out.println("\n----------------------------------\n");
+
+            // 2. LOAN ACCOUNT TESTING
+            System.out.println("--- Testing Loan Account ---");
+
+            Scanner loan = new Scanner(System.in);
+             */
+
+    }
 }
-
-
-/* System.out.println("\n----------------------------------\n");
-
-    /* 2. LOAN ACCOUNT TESTING
-        System.out.println("--- Testing Loan Account ---");
-
-    LoanAccount loan = new LoanAccount(
-            20098765L, "Jane Smith", "456 Maple Avenue, Johannesburg", "0823456789", "1988-11-23", 40000.0, 0.12
-    );
-
-        loan.topUpLoan(10000.0);
-        loan.makeRepayment(15000.0);
-        loan.makeRepayment(35000.0);
-
-}*/

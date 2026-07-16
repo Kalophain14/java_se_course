@@ -29,7 +29,7 @@ public class ParameterisedConstructors {
         Child(int x, int y)
         {
             super(x);
-            System.out.println("2 Parameter Child");
+            System.out.println("Parameter Child Takes: " + y);
         }
     }
 
@@ -48,6 +48,6 @@ public class ParameterisedConstructors {
     public static void main(String[] args) {
         // Constructors in Inheritance
 
-        Child child = new Child(21, 20);
+        Child child = new Child(21 ,10);
     }
 }
