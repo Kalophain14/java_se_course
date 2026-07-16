@@ -19,28 +19,29 @@ public class ThisVsSuper {
     // Using the Super properties
     static class Circle extends ThisVsSuper {
         int radius;
-        int x = 10;
+        int x = 30;
 
-        Circle(int l, int b) {
+        Circle(int l, int b, int h) {
             super(l, b);
-            radius = l;
+            radius = h;
         }
 
         void display(){
-            System.out.println("Radius: " + this.radius);
-            System.out.println("X: " + this.x);
+            System.out.println("Super: " + x);
+            System.out.println(x);
         }
     }
 
     public static void main(String[] args) {
 
         // this vs super
-        ThisVsSuper test = new ThisVsSuper(10, 30);
+        ThisVsSuper test = new ThisVsSuper(10, 14);
         test.display();
 
         System.out.println();
 
-        Circle test2 = new Circle(30, 20);
-        test2.display();
+        Circle c1 = new Circle(15,12,13);
+        c1.display();
+        System.out.println(c1.length);
     }
 }
