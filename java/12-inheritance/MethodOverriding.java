@@ -14,7 +14,7 @@ package MethodOverriding;
     }
 
     class Sub extends Super{
-        //@Override
+        @Override
         public void display()
         {
             System.out.println("Sub Class borrowed");
@@ -33,11 +33,10 @@ package MethodOverriding;
 
         /*
         NB The method will always be called depending
-        on the object not reference the word for it it
+        on the object not reference the word for it
         DYNAMIC DISPATCH
          */
-        Super su = new Sub(); // Sub class will be called
-        su.display();
-
+            Super su = new Sub(); // Sub Class will be called
+            su.display();
         }
     }
