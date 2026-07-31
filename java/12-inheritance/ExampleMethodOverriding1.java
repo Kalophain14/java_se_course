@@ -1,24 +1,22 @@
 package ExampleMethodOverriding1;
 
 class TV {
-
     // Class methods
     public void switchOn() {
-        System.out.println("TV Switching on");
+        System.out.println("Old TV Switched on");
     }
     public void switchOff() {
-        System.out.println("TV Switching off");
+        System.out.println("Old TV Switched off");
     }
 }
 
-// Smart TV Extension
 
+// Smart TV Extension
 class SmartTV extends TV {
     @Override
     public void switchOn() {
-        System.out.println("Smart TV switches using Remote");
+        System.out.println("Smart TV uses Remote");
     }
-    @Override
     public void switchOff() {
         System.out.println("Smart TV switches off using Remote");
     }
@@ -30,16 +28,19 @@ class SmartTV extends TV {
     }
 }
 
+
+
 public class ExampleMethodOverriding1 {
     public static void main(String[] args) {
         TV oldTv = new TV();
         oldTv.switchOn();
         oldTv.switchOff();
 
-        /* SmartTV featureTv = new SmartTV();
-        featureTv.switchOn();
-        featureTv.switchOff();
-        featureTv.browseChannel();
-         */
+        System.out.println("=== Overiding Method Extended ===");
+        SmartTV newTv = new SmartTV();
+        newTv.switchOn();
+        newTv.switchOff();
+        newTv.changeChannel();
+        newTv.browseChannel();
     }
 }
