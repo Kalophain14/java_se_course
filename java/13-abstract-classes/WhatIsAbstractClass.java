@@ -13,6 +13,7 @@ Concrete Class
 - You can create the object
 - You can create a reference as well as an object (below)
 - Animal test1 = new Animal
+- It doesn't adopt the abstract class when it inheritance from super
 */
 
 // Abstract Class
