@@ -3,6 +3,7 @@ package WhatIsAbstractClass;
 /*
 
 Abstract Class
+- You cannot define an abstract method (undefined)
 - You cannot create the object
 - You can create a reference (below)
 - Reference Animal test1
