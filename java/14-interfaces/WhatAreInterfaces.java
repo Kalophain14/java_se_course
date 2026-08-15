@@ -2,6 +2,8 @@ package WhatAreInterfaces;
 
 /*
 Interface is used to achieve only Polymorphism
+Interface is a collection of Abstract class
+Interface can also implement from public classes
 Interfaces are abstract, you can't create an object of the reference
 You can only create the reference of the interface class
 The subclasses don't extend rather implements to the superClass
