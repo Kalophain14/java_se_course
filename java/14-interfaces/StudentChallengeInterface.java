@@ -19,6 +19,9 @@ interface IMusicPlayer{
    void play();
    void pause();
    void stop();
+   default void start(){
+       System.out.println("Phone starts playing");
+   }
 }
 
 // Extending as well as implementing the
@@ -30,6 +33,7 @@ class SmartPhone extends Phone implements ICamera, IMusicPlayer{
     public void play(){ System.out.println("SmartPhone playing"); }
     public void pause() { System.out.println("SmartPhone paused"); }
     public void stop() { System.out.println("SmartPhone stopped"); }
+    public void start(){ System.out.println("SmartPhone starting default"); }
 }
 
 public class StudentChallengeInterface {
@@ -50,12 +54,16 @@ public class StudentChallengeInterface {
         iPhone.stop();
         iPhone.click();
         iPhone.record();
+        iPhone.start();
         System.out.println();
         System.out.println("==Interface Callout==");
+
         // Referencing the Method of an Interface
+        // Only have access to the ImusicPlayer Methods
         IMusicPlayer iMusic = new SmartPhone();
         iMusic.pause();
         iMusic.stop();
         iMusic.play();
+        iMusic.start();
     }
 }
