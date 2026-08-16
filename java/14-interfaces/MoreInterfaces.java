@@ -32,7 +32,7 @@ class Customer implements Member {
 
     // Method Override Interface
     public void callback() {
-        System.out.println("Customer callback");
+        System.out.println("I will call " + name);
     }
 }
 
