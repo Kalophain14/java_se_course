@@ -7,11 +7,34 @@ Interface can also implement from public classes
 Interfaces are abstract, you can't create an object of the reference
 You can only create the reference of the interface class
 The subclasses don't extend rather implements to the superClass
+
+Rules:
+You can't make the method final/private abstract
+an identifier must be in uppercase int X = 10 (static + final)
+Methods are abstract no bodies
+They can have a method that is static and has a body
+An interface can extends from another Interface
+You can have a default method, this helps to modify the interface without disturbing the classes written
+
+interface SuperTest1{
+    final static int X = 10
+    void meth1();
+    void meth2();
+    public static void meth3(){
+    System.out.println("Meth3 interface);
+    }
+
+}
+
  */
 
 interface SuperTest1{
+    final static int X = 10;
     void meth1();
     void meth2();
+    public static void meth3(){
+        System.out.println("Meth3 SuperTest1");
+    }
 }
 
 class SubTest2 implements SuperTest1{
@@ -42,5 +65,8 @@ public class WhatAreInterfaces {
         test2.meth1();
         test2.meth2();
         test2.meth3();
+
+        System.out.println(SuperTest1.X);
+        SuperTest1.meth3();
     }
 }
