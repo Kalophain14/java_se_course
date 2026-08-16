@@ -31,7 +31,6 @@ class Customer implements Member {
     }
 
     // Method Override Interface
-    @Override
     public void callback() {
         System.out.println("Customer callback");
     }
@@ -41,11 +40,11 @@ public class MoreInterfaces{
     public static void main(String[] args) {
 
         Store checkers = new Store();
-        Customer newcustomer = new Customer(args[0]);
+        Customer customer = new Customer("Alice");
+        Customer customer1 = new Customer("Bob");
 
-        checkers.registerMember(newcustomer);
-        checkers.inviteSale(newcustomer);
-
-        newcustomer.callback();
+        checkers.registerMember(customer);
+        checkers.registerMember(customer1);
+        checkers.inviteSale(customer);
     }
 }
