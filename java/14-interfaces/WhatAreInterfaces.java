@@ -16,17 +16,15 @@ They can have a method that is static and has a body
 An interface can extends from another Interface
 You can have a default method, this helps to modify the interface without disturbing the classes written
 
-interface SuperTest1{
+interface SuperTest1 {
     final static int X = 10
     void meth1();
     void meth2();
     public static void meth3(){
     System.out.println("Meth3 interface);
     }
-
 }
-
- */
+*/
 
 interface SuperTest1{
     final static int X = 10;
@@ -44,14 +42,12 @@ class SubTest2 implements SuperTest1{
     public void meth2(){
         System.out.println("meth2 Override");
     }
-
     public void meth3(){
         System.out.println("New Method from SubClass");
     }
 }
 
 public class WhatAreInterfaces {
-
     public static void main(String[] args) {
         // Cant call 3rd method as you are using the reference of superclass
         System.out.println("==Reference Superclass & Object Subclass==");
@@ -59,13 +55,13 @@ public class WhatAreInterfaces {
         test1.meth1();
         test1.meth2();
         System.out.println();
+
         // Reference and Object same class
         System.out.println("==Reference and Object Subclass==");
         SubTest2 test2 = new SubTest2();
         test2.meth1();
         test2.meth2();
         test2.meth3();
-
         System.out.println(SuperTest1.X);
         SuperTest1.meth3();
     }
