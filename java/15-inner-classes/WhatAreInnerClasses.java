@@ -13,11 +13,11 @@
 
 // NESTED INNER CLASS
 class Outer {
-    int x = 10;
+    int x = 34;
 
     //inner class
     class Inner{
-        int y = 20;
+        int y = 32;
         void innerdDisplay(){
             System.out.println(x); //10
             System.out.println(y); //20
