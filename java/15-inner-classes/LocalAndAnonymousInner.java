@@ -17,7 +17,6 @@ class Outer{
 
 
 // Anonymous Class
-
 abstract class My{
     abstract void display();
 }
@@ -38,9 +37,10 @@ class AnonymousOuter{
     }
 }
 
-public class LocalAndAnonymousInner; {
-
+public class LocalAndAnonymousInner {
     public static void main(String[] args) {
-        // Demo - Nested Inner Classes
+    //
+        AnonymousOuter o = new AnonymousOuter();
+        o.AnonymousMeth();
     }
 }
