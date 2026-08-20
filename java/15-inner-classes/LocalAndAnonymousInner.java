@@ -21,11 +21,11 @@ abstract class My{
     abstract void display();
 }
 
+// The objects of the abstract class becomes a class
+// then overriding the method inside the class
+// therefore becomes anonymous class
 class AnonymousOuter{
     public void AnonymousMeth(){
-        // The objects of the abstract class becomes a class
-        // then overriding the method inside the class
-        // therefore becomes anonymous class
         My m = new My() {
             @Override
             void display()
