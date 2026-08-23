@@ -16,7 +16,7 @@ By the end of this learning path, I aim to:
 **Linux/Unix Systems** ✅ *Completed*
 - Understand Linux/Unix fundamentals and command-line operations
 - Navigate the filesystem and manage files and permissions
-- Write and execute shell scripts for automation
+- Write and execute shell scripts for automation (to be learned deeply)
 - Understand processes, environment variables, and system administration basics
 
 **Git & GitHub** ✅ *Completed*
