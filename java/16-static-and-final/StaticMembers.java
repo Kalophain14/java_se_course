@@ -24,6 +24,7 @@ class MercFour {
 public class StaticMembers {
     public static void main(String[] args) {
         // No instances needed — static members belong to the class itself
+        // They can be called in the main member as it is static
         System.out.println("PLK on-road price: " + MercFour.onRoadPrice("PLK"));
         System.out.println("CPT on-road price: " + MercFour.onRoadPrice("CPT"));
         System.out.println("Base price (static field): " + MercFour.price);
