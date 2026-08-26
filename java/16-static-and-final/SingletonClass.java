@@ -6,6 +6,7 @@ Private static instance variable = belongs to the class itself and one copy crea
 Public static method to get the instance = The only access to the private constructor
  */
 
+package SingletonClass;
 
 
 class CoffeeMachine {
