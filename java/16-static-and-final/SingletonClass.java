@@ -63,11 +63,11 @@ public class SingletonClass {
         CoffeeMachine coffeeMachine = CoffeeMachine.getInstance();
         CoffeeMachine coffeeMachine2 = CoffeeMachine.getInstance();
 
-        coffeeMachine.fillWater(10);
-        coffeeMachine.fillSugar(10);
-
-        coffeeMachine2.fillWater(10);
-        coffeeMachine2.fillSugar(10);
+//        coffeeMachine.fillWater(10);
+//        coffeeMachine.fillSugar(10);
+//
+//        coffeeMachine2.fillWater(10);
+//        coffeeMachine2.fillSugar(10);
 
         System.out.println("CoffeeMachine is " + coffeeMachine);
         System.out.println("CoffeeMachine is " + coffeeMachine2);
