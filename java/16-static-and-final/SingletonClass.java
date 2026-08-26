@@ -47,7 +47,7 @@ class CoffeeMachine {
         return coffeeqty + waterqty + sugarqty + milkqty;
     }
 
-    // Thread-safe way to get the single instance
+    // Thread-safe way to get the single instance OR Access
     public static synchronized CoffeeMachine getInstance() {
         if (ours == null) {
             ours = new CoffeeMachine();
