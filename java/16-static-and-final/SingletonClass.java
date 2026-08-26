@@ -1,3 +1,13 @@
+/*
+Key ingredients when creating a singleton class:
+
+Private constructor  = prevents new from outside(creating an object)
+Private static instance variable = belongs to the class itself and one copy created
+Public static method to get the instance = The only access to the private constructor
+ */
+
+
+
 class CoffeeMachine {
     // Fields
     private float coffeeqty;
@@ -5,7 +15,7 @@ class CoffeeMachine {
     private float sugarqty;
     private float milkqty;
 
-    static private CoffeeMachine ours = null;
+    private static CoffeeMachine ours = null;
 
     // Private constructor - prevents external instantiation
     private CoffeeMachine() {
@@ -38,7 +48,7 @@ class CoffeeMachine {
     }
 
     // Thread-safe way to get the single instance
-    static public synchronized CoffeeMachine getInstance() {
+    public static synchronized CoffeeMachine getInstance() {
         if (ours == null) {
             ours = new CoffeeMachine();
         }
