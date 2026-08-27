@@ -1,6 +1,14 @@
-public class WhatArePackages {
+package MyPackage1;
 
+class Demo {
+   public void Display(){
+       System.out.println("Demo");
+   }
+}
+
+public class WhatArePackages {
     public static void main(String[] args) {
-        // What are Packages
+        Demo demo = new Demo();
+        demo.Display();
     }
 }
