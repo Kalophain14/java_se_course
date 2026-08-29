@@ -18,6 +18,7 @@ By the end of this learning path, I aim to:
 - Navigate the filesystem and manage files and permissions
 - Write and execute shell scripts for automation (to be learned deeply)
 - Understand processes, environment variables, and system administration basics
+- Linux Full Course Soon
 
 **Git & GitHub** ✅ *Completed*
 - Master Git fundamentals: init, add, commit, push, pull
