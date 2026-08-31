@@ -14,7 +14,7 @@ Access Modifiers = Java has four access modifiers that control visibility of
 
  */
 
-public class Example {
+class Example {
     public int a;      // accessible everywhere
     protected int b;   // accessible in package + subclasses
     int c;              // default: accessible in package only
