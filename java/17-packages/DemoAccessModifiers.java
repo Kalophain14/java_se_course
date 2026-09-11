@@ -1,6 +1,8 @@
 package DemoPackage;
 
 public class DemoAccessModifiers {
+    // Modifiers
+
     int a = 10;              // default
     private int b = 20;      // private
     protected int c = 30;    // protected
