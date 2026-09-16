@@ -38,12 +38,21 @@ Finally = Finally displayed
 
 */
 
+import java.util.Scanner;
+
 public class HowToHandleExceptions {
 
     public static void main(String[] args) {
         try {
-            int numerator = 10;
-            int denominator = 0;
+            // int numerator = 10;
+            // int denominator = 0;
+
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter the numerator: ");
+            int numerator = input.nextInt();
+            System.out.print("Enter the denominator: ");
+            int denominator = input.nextInt();
+
             int result = numerator / denominator; // Arithmetic Exception 10 / 0= Infinite
             System.out.println("The division num: " + result);
         }
